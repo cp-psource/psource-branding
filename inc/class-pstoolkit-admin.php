@@ -195,7 +195,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			if ( is_a( $screen, 'WP_Screen' ) && preg_match( '/_page_branding/', $screen->id ) ) {
 				$admin_title = sprintf(
 					'%s%s%s',
-					_x( 'PSToolkit', 'admin title', 'ub' ),
+					_x( 'PS Toolkit', 'admin title', 'ub' ),
 					_x( ' &lsaquo; ', 'admin title separator', 'ub' ),
 					$admin_title
 				);
@@ -602,7 +602,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		 * @param string $capability Capability.
 		 */
 		private function menu( $capability ) {
-			$parent_menu_title = PSToolkit_Helper::is_pro() ? __( 'Psource WP Toolkit', 'ub' ) : __( 'PSToolkit', 'ub' );
+			$parent_menu_title = PSToolkit_Helper::is_pro() ? __( 'PS Toolkit', 'ub' ) : __( 'PS Toolkit', 'ub' );
 
 			// Add in our menu page
 			$this->top_page_slug = add_menu_page(

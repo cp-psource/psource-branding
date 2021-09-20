@@ -523,7 +523,7 @@ if ( ! class_exists( 'PSToolkit_Color_Schemes' ) ) {
 		 */
 		private function set_defaults() {
 			$defaults       = array(
-				'scheme_name'                             => __( 'PSToolkit', 'ub' ),
+				'scheme_name'                             => __( 'PS Toolkit', 'ub' ),
 				/**
 				 * general
 				 */

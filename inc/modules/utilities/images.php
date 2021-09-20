@@ -214,7 +214,7 @@ if ( ! class_exists( 'PSToolkit_Images' ) ) {
 					'admin.php'
 				);
 				$override_description = sprintf(
-					__( 'Wählen Sie aus, ob das hier definierte Favicon das definierte Seiten-Symbol in <b><a href="%1$s">Darstellung</a> &gt; <a href="%2$s">Anpassen</a></b> überschreiben soll.', 'ub' ),
+					__( 'Wähle aus, ob das hier definierte Favicon das definierte Seiten-Symbol in <b><a href="%1$s">Darstellung</a> &gt; <a href="%2$s">Anpassen</a></b> überschreiben soll.', 'ub' ),
 					admin_url( 'themes.php' ),
 					admin_url( add_query_arg( 'return', urlencode( $images ), 'customize.php' ) )
 				);

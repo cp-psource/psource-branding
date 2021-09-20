@@ -401,7 +401,7 @@ if ( ! class_exists( 'PSToolkit_Text_Replacement' ) ) {
 							),
 							'value'       => isset( $item['exclude_url'] ) && ! empty( $item['exclude_url'] ) ? $item['exclude_url'] : 'exclude',
 							'description' => array(
-								'content'  => __( 'Wählen Sie aus, ob der Text innerhalb des Tags &lt;a&gt; ersetzt werden soll.', 'ub' ),
+								'content'  => __( 'Wähle aus, ob der Text innerhalb des Tags &lt;a&gt; ersetzt werden soll.', 'ub' ),
 								'position' => 'bottom',
 							),
 							'default'     => 'exclude',

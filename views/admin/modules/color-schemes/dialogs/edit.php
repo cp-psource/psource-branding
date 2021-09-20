@@ -22,7 +22,7 @@
 				<div class="sui-accordion ">
 					<div class="sui-accordion-item">
 						<div class="sui-accordion-item-header">
-							<div class="sui-accordion-item-title"><?php esc_html_e( 'General', 'ub' ); ?></div>
+							<div class="sui-accordion-item-title"><?php esc_html_e( 'Allgemein', 'ub' ); ?></div>
 							<div class="sui-accordion-col-auto">
 								<button type="button" class="sui-button-icon sui-accordion-open-indicator" aria-label="<?php esc_html_e( 'Öffne Element', 'ub' ); ?>"><i class="sui-icon-chevron-down" aria-hidden="true"></i></button>
 							</div>

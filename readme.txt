@@ -1,17 +1,16 @@
 === PSToolkit – White Label WordPress, Custom Login Page Customizer ===
-Plugin Name: PSToolkit – White Label WordPress, Customizer für benutzerdefinierte Anmeldeseiten
-Version: 2.2.8
-Author: WMS N@W
+Contributors: DerN3rd (WMS N@W)
+Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
+Author: DerN3rd (WMS N@W)
 Author URI: https://n3rds.work/
-Contributors: WPMUDEV, WebFactory
 Tags: white label wordpress, custom login page, login page customizer, whitelabel, customize system emails, customize default emails, rebrand, rebranding, coming soon page, maintenance mode, under construction page, coming soon template, login screen
 Requires at least: 4.6
 Tested up to: 5.6
-Stable tag: 3.4.1
+Stable tag: 2.2.8
 Requires PHP: 5.6.20
 License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-White Label & Rebranding Deiner Anmeldeseite & WordPress-Dashboard. Passe System-E-Mails an und lasse WordPress mit PSYToolkit umbenennen.
+White Label & Rebranding Deiner Anmeldeseite & WordPress-Dashboard. Passe System-E-Mails an und lasse WordPress mit PS Toolkit umbenennen.
 
 == Description ==
 
@@ -22,7 +21,6 @@ Spare Zeit, beseitige Probleme mit der Plugin-Kompatibilität und verbessere die
 Selbst die besten WordPress-Theme-Builder verlassen das WordPress-Branding auf Deiner Webseite. PSToolkit hilft Dir beim Rebranding!
 
 In Deinem persönlichen Blog ist dies kein großes Problem, aber für ein kleines Unternehmen, eine Design- und Entwicklungsagentur oder eine professionelle Webseite ist ein fertiger Look mit einem vollständigen Markenpaket wichtig. Hier kommt PSToolkit ins Spiel! Verwandel Dein WordPress in Deine eigene White-Label-Lösung.
-
 
 ### Mehr als 30 Module im PSToolkit enthalten!
 
@@ -117,47 +115,28 @@ PSToolkit can be used to white label all the sites across an entire network! Use
 
 PSToolkit is super easy to use – no confusing settings and [fully documented](https://n3rds.work/docs/wpmu-dev-plugins/pstoolkit/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=pstoolkit-readme&utm_content=fully_documented). Plus, PSToolkit lets you choose to activate only the modules you need so you can keep your site moving at top performance.
 
+[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
+[Projektseite](https://n3rds.work/piestingtal_source/psourcewp-toolkit/)
+[Handbuch](https://n3rds.work/docs/psource-wp-toolkit-dokumentation-erste-schritte/)
+[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-forum-supportforum/)
+[GitHub](https://github.com/piestingtal-source/psource-branding)
 
-### Want More?
+== Mehr PSOURCE ==
 
-- [Smush](https://wordpress.org/plugins/wp-smushit/) - Image Optimizer
-- [Hummingbird](https://wordpress.org/plugins/hummingbird-performance/) - Page Speed Optimization
-- [Hustle](https://wordpress.org/plugins/wordpress-popup/) - Pop-ups, Slide-ins and Email Opt-ins
-- [SmartCrawl](https://wordpress.org/plugins/smartcrawl-seo/) - SEO Optimizer
-- [Defender](https://wordpress.org/plugins/defender-security/) - Security, Monitoring, and Hack Protection
-- [Forminator](https://wordpress.org/plugins/forminator/) - Form, Poll, and Quiz Builder
-- [Beehive](https://wordpress.org/plugins/beehive-analytics/) - Customizable Google Analytics Dashboards
+= PS EVENTS PLUGIN =
 
-PSToolkit can take care of all your WordPress white labeling needs along with custom login, maintenance mode, under construction, and coming soon pages for free!
+Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
+Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
 
-However, if you’d like PSToolkit’s +30 modules, along with premium 24/7 live chat support, hosting credits, and the complete pro marketing, performance, and security suite, take the next step with [Psource WP Toolkit](https://n3rds.work/piestingtal_source/psourcewp-toolkit/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=pstoolkit-readme&utm_content=pstoolkit_pro#trial). Psource WP Toolkit comes with a whole team of WordPress optimization hero friends (security, SEO, performance, support and maintenance automation) – perfect for agencies and freelancers offering site maintenance services.
+== Hilf uns ==
 
+Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
+Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
 
-== Privacy ==
+= Unterstütze uns =
 
-PSToolkit does not collect or store any data about end users on your website. The only input option PSToolkit has is to a newsletter subscription for site admins only.
-
-PSToolkit uses a third-party email service to send informational emails (Opt-in) to the site administrator. The administrator's email address is sent to Mailchimp and a cookie is set by the service. Only administrator information is collected by Mailchimp.
-
-== Frequently Asked Questions ==
-
-= Where can I find documentation for PSToolkit? =
-Every feature of PSToolkit is documented on the WPMU DEV website. Visit [PSToolkit Documentation](https://n3rds.work/docs/wpmu-dev-plugins/pstoolkit/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=pstoolkit-readme&utm_content=pstoolkit_documentation) for configuration details.
-
-= Is PSToolkit really free? =
-Yes! PSToolkit is 100% free and has most of the same features as [Psource WP Toolkit](https://n3rds.work/piestingtal_source/psourcewp-toolkit/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=pstoolkit-readme&utm_content=pstoolkit_pro#trial) without limitations. The only difference with the free version is the inclusion of contextual promotion of our other relevant plugins. Enjoy :)
-
-= What about GDPR and User Privacy? =
-PSToolkit includes tools that make it easy for you to follow data protection regulations and keep your visitor’s data safe. When using features like Tracking Codes and Cookie Notice, be sure to follow privacy guidelines and update your terms of service.
-
-
-== Screenshots ==
-
-1. Customize the WordPress login screen
-2. Make your own dashboard widgets feed
-3. Give your emails a makeover with templates or custom HTML
-4. Build amazing Coming Soon and Maintenance pages
+Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
 
 == Changelog ==
 

@@ -589,7 +589,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 							'type'        => 'textarea',
 							'label'       => __( 'GET-Parameter', 'ub' ),
 							'placeholder' => __( 'Füge hier GET-Parameter hinzu', 'ub' ),
-							'description' => sprintf( __( 'Füge einen Parameter pro Zeile hinzu. Wenn Sie Probleme beim Auffinden der GET-Parameter für Deinen Page Builder hast, findest Du Parameter für beliebte Ersteller %1$shier%2$s.', 'ub' ), '<a href="#" id="pstoolkit_popular_builders" data-a11y-dialog-show="pstoolkit-dialog-add-popular-builders">', '</a>' ),
+							'description' => sprintf( __( 'Füge einen Parameter pro Zeile hinzu. Wenn Du Probleme beim Auffinden der GET-Parameter für Deinen Page Builder hast, findest Du Parameter für beliebte Ersteller %1$shier%2$s.', 'ub' ), '<a href="#" id="pstoolkit_popular_builders" data-a11y-dialog-show="pstoolkit-dialog-add-popular-builders">', '</a>' ),
 						),
 					),
 				),
@@ -929,7 +929,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 		private function get_sui_submenu_config( $item = array(), $id = '{{{data.id}}}' ) {
 			$config = array(
 				'submenu][' . $id . '][title'  => array(
-					'label'    => __( 'Tiel', 'ub' ),
+					'label'    => __( 'Titel', 'ub' ),
 					'value'    => isset( $item['title'] ) ? $item['title'] : '',
 					'sui-row'  => 'begin',
 					'required' => 'required',

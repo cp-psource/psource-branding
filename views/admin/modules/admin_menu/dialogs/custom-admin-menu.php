@@ -10,7 +10,7 @@
 
 				<span class="sui-loading-text">
 					<i class="sui-icon-refresh" aria-hidden="true"></i>
-					<?php esc_html_e( 'Discard All changes', 'ub' ); ?>
+					<?php esc_html_e( 'Alle Änderungen verwerfen', 'ub' ); ?>
 				</span>
 			</button>
 

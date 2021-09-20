@@ -51,7 +51,7 @@
 		<div class="sui-row">
 			<div class="sui-col">
 				<div class="sui-form-field pstoolkit-submenu-title pstoolkit-admin-bar-submenu-title">
-					<label for="pstoolkit-submenu-title-{{{data.id}}}" class="sui-label">Title</label>
+					<label for="pstoolkit-submenu-title-{{{data.id}}}" class="sui-label">Titel</label>
 					<input id="pstoolkit-submenu-title-{{{data.id}}}" type="text" name="pstoolkit[submenu][{{{data.id}}}][title]" value="{{{data.title}}}" data-default="" data-required="required" aria-describedby="input-description" class="sui-form-control" />
 					<span class="hidden"><?php esc_html_e( 'Dieses Feld kann nicht leer sein!', 'ub' ); ?></span>
 				</div>

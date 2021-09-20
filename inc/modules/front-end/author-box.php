@@ -971,7 +971,7 @@ if ( ! class_exists( 'PSToolkit_Author_Box' ) ) {
 				),
 				'avatar_show'          => array(
 					'type'        => 'sui-tab',
-					'label'       => __( 'Sichbarkeit', 'ub' ),
+					'label'       => __( 'Sichtbarkeit', 'ub' ),
 					'options'     => array(
 						'off' => __( 'Ausblenden', 'ub' ),
 						'on'  => __( 'Anzeigen', 'ub' ),

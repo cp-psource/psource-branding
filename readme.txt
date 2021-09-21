@@ -129,6 +129,8 @@ PSToolkit is super easy to use – no confusing settings and [fully documented](
 Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
 Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
 
+Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+
 == Hilf uns ==
 
 Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
@@ -137,6 +139,8 @@ Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Pl
 = Unterstütze uns =
 
 Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
+
+Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
 
 == Changelog ==
 

@@ -13,7 +13,7 @@
 	</div>
 	<div class="sui-accordion-item-body">
 		<label class="sui-label"><?php echo esc_html( $field_label ); ?></label>
-		<input type="text" id="simple_options_content_social_media_<?php echo esc_attr( $id ); ?>" name="simple_options[content][social_media_<?php echo esc_attr( $id ); ?>]" value="<?php echo esc_attr( $value ); ?>" class="sui-form-control" placeholder="<?php esc_attr_e( 'Type your profile URL here', 'ub' ); ?>"/>
+		<input type="text" id="simple_options_content_social_media_<?php echo esc_attr( $id ); ?>" name="simple_options[content][social_media_<?php echo esc_attr( $id ); ?>]" value="<?php echo esc_attr( $value ); ?>" class="sui-form-control" placeholder="<?php esc_attr_e( 'Gib hier Deine Profil-URL ein', 'ub' ); ?>"/>
 	</div>
 </div>
 

@@ -486,7 +486,7 @@ if ( ! class_exists( 'PSToolkit_DB_Error_Page' ) ) {
 			// Defaults.
 			$defaults     = array(
 				'error_message' => array(
-					'content_title'   => __( '503 Service Temporarily Unavailable', 'ub' ),
+					'content_title'   => __( '503 Dienst vorübergehend nicht verfügbar', 'ub' ),
 					'content_content' => wpautop( __( 'Derzeit treten technische Probleme beim Herstellen einer Verbindung zur Datenbank auf. Bitte schaue bald wieder vorbei.', 'ub' ) ),
 				),
 			);

@@ -431,7 +431,7 @@ if ( ! class_exists( 'PSToolkit_Import' ) ) {
 			$this->options = array(
 				'import' => array(
 					'title'       => __( 'Importieren', 'ub' ),
-					'description' => __( 'Verwende dieses Tool, um die PSToolkit-Konfigurationen zu importieren.', 'ub' ),
+					'description' => __( 'Verwende dieses Tool, um die PS Toolkit-Konfigurationen zu importieren.', 'ub' ),
 					'hide-reset'  => true,
 					'hide-th'     => true,
 					'fields'      => array(

@@ -281,7 +281,7 @@ if ( ! class_exists( 'PSToolkit_Images' ) ) {
 							'type'        => 'sui-tab',
 							'label'       => __( 'Customizer-Symbol überschreiben', 'ub' ),
 							'options'     => array(
-								'disabled' => __( 'Leave it', 'ub' ),
+								'disabled' => __( 'Lass es', 'ub' ),
 								'enabled'  => __( 'Überschreiben', 'ub' ),
 							),
 							'default'     => 'disabled',

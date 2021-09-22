@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: PSOURCE WP Toolkit
+Plugin Name: PS Toolkit
 Plugin URI: https://n3rds.work/piestingtal_source/psourcewp-toolkit/
 Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von WordPress-Links und Branding und vielem mehr.
 Author: WMS N@W

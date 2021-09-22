@@ -15,7 +15,7 @@
 				<div class="sui-tabs sui-tabs-flushed">
 					<div data-tabs="">
 						<div class="pstoolkit-first-tab active"><?php esc_html_e( 'Allgemeines', 'ub' ); ?></div>
-						<div><?php esc_html_e( 'Visibility', 'ub' ); ?></div>
+						<div><?php esc_html_e( 'Sichtbarkeit', 'ub' ); ?></div>
 					</div>
 					<div data-panes="">
 						<div class="active <?php echo esc_attr( $dialog_id ); ?>-pane-general">

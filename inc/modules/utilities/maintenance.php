@@ -5,9 +5,9 @@
  * @package PSToolkit
  * @subpackage Utilites
  */
-if ( ! class_exists( 'Branda_Maintenance_Maintenance' ) ) {
+if ( ! class_exists( 'PSToolkit_Maintenance_Maintenance' ) ) {
 
-	class Branda_Maintenance_Maintenance extends PSToolkit_Helper {
+	class PSToolkit_Maintenance_Maintenance extends PSToolkit_Helper {
 		protected $option_name = 'ub_maintenance';
 		private $current_sites = array();
 		protected $file        = __FILE__;
@@ -1020,4 +1020,4 @@ if ( ! class_exists( 'Branda_Maintenance_Maintenance' ) ) {
 		}
 	}
 }
-new Branda_Maintenance_Maintenance();
+new PSToolkit_Maintenance_Maintenance();

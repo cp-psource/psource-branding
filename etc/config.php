@@ -355,8 +355,8 @@ function pstoolkit_get_modules_list( $mode = 'full' ) {
 		 */
 		'utilities/text-replacement.php'        => array(
 			'module'           => 'text-replacement',
-			'name'             => __( 'Text Replacement', 'ub' ),
-			'description'      => __( 'Replace any text from your admin pages and/or front-end pages with an easy to use interface. For example, you can use this to replace the word “WordPress” with your own website name.', 'ub' ),
+			'name'             => __( 'Textersetzung', 'ub' ),
+			'description'      => __( 'Ersetze jeglichen Text von Deinen Admin-Seiten und/oder Front-End-Seiten durch eine benutzerfreundliche Oberfläche. Damit kannst Du beispielsweise das Wort „WordPress“ durch Deinen eigenen Webseiten-Namen ersetzen.', 'ub' ),
 			'public'           => true,
 			'group'            => 'utilities',
 			'options'          => array(

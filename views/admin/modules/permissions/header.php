@@ -6,5 +6,5 @@
  */
 ?>
 <div class="sui-box-header">
-	<h3 class="sui-box-title"><?php esc_html_e( 'Permissions', 'ub' ); ?></h3>
+	<h3 class="sui-box-title"><?php esc_html_e( 'Berechtigungen', 'ub' ); ?></h3>
 </div>

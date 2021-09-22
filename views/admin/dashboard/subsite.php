@@ -30,7 +30,7 @@ $this->render( 'admin/dashboard/widget-modules', $args );
 	>
 	<?php
 		printf(
-			esc_html__( '%1$s, Hier können nur Module verwendet werden, denen Du Zugriff auf die Unterwebseite gewährt hast. Du kannst Module zu den %2$sPermissions-Einstellungen%3$s hinzufügen oder daraus entfernen.', 'ub' ),
+			esc_html__( '%1$s, Hier können nur Module verwendet werden, denen Du Zugriff auf die Unterwebseite gewährt hast. Du kannst Module zu den %2$sBerechtigungen-Einstellungen%3$s hinzufügen oder daraus entfernen.', 'ub' ),
 			esc_html( $message['username'] ),
 			'<a href="' . esc_url( $message['url'] ) . '">',
 			'</a>'

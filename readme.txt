@@ -306,5 +306,5 @@ WPMU DEV is a premium supplier of quality WordPress plugins, services and suppor
 Don't forget to stay up to date on everything WordPress from the Internet's number one resource:
 [WPMU DEV Blog](https://n3rds.work/blog/?utm_source=wordpress.org&utm_medium=readme&utm_campaign=pstoolkit-readme&utm_content=wpmu_dev_blog_link)
 
-Hey, one more thing... we hope you [enjoy our free offerings](https://profiles.wordpress.org/wpmudev/#content-plugins) as much as we've loved making them for you!
+Hey, one more thing... we hope you [enjoy our free offerings](https://profiles.wordpress.org/psource/#content-plugins) as much as we've loved making them for you!
 

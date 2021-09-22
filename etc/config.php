@@ -688,7 +688,7 @@ function pstoolkit_get_modules_list( $mode = 'full' ) {
 				 */
 				'ub_custom_welcome_message',
 				'ub_remove_wp_dashboard_widgets',
-				'wpmudev_dashboard_text_widgets_options',
+				'psource_dashboard_text_widgets_options',
 			),
 			'allow-override' => 'allow',
 			'has-help'       => true,
@@ -711,7 +711,7 @@ function pstoolkit_get_modules_list( $mode = 'full' ) {
 				 *
 				 * @since 1.0.0
 				 */
-				'wpmudev_df_widget_options',
+				'psource_df_widget_options',
 			),
 			'status-indicator' => 'hide',
 			'allow-override'   => 'allow',

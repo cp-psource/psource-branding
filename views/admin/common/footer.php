@@ -23,7 +23,7 @@ if ( PSToolkit_Helper::is_member() ) {
 } else {
 	?>
 <ul class="sui-footer-nav">
-	<li><a href="https://profiles.wordpress.org/wpmudev#content-plugins" target="_blank"><?php esc_html_e( 'Free Plugins', 'ub' ); ?></a></li>
+	<li><a href="https://profiles.wordpress.org/psource#content-plugins" target="_blank"><?php esc_html_e( 'Free Plugins', 'ub' ); ?></a></li>
 	<li><a href="https://n3rds.work/features/" target="_blank"><?php esc_html_e( 'Membership', 'ub' ); ?></a></li>
 	<li><a href="https://n3rds.work/roadmap/" target="_blank"><?php esc_html_e( 'Roadmap', 'ub' ); ?></a></li>
 	<li><a href="https://n3rds.work/docs/" target="_blank"><?php esc_html_e( 'Docs', 'ub' ); ?></a></li>
@@ -36,8 +36,8 @@ if ( PSToolkit_Helper::is_member() ) {
 if ( ! $hide_footer ) {
 	?>
 <ul class="sui-footer-social">
-	<li><a href="https://www.facebook.com/wpmudev" target="_blank"><i class="sui-icon-social-facebook" aria-hidden="true"></i><span class="sui-screen-reader-text">Facebook</span></a></li>
-	<li><a href="https://twitter.com/wpmudev" target="_blank"><i class="sui-icon-social-twitter" aria-hidden="true"></i></a><span class="sui-screen-reader-text">Twitter</span></li>
+	<li><a href="https://www.facebook.com/psource" target="_blank"><i class="sui-icon-social-facebook" aria-hidden="true"></i><span class="sui-screen-reader-text">Facebook</span></a></li>
+	<li><a href="https://twitter.com/psource" target="_blank"><i class="sui-icon-social-twitter" aria-hidden="true"></i></a><span class="sui-screen-reader-text">Twitter</span></li>
 	<li><a href="https://www.instagram.com/wpmu_dev/" target="_blank"><i class="sui-icon-instagram" aria-hidden="true"></i><span class="sui-screen-reader-text">Instagram</span></a></li>
 </ul>
 	<?php

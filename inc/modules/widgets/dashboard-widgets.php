@@ -167,7 +167,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 			/**
 			 * Dashboard Text Widget
 			 */
-			$options = pstoolkit_get_option_filtered( 'wpmudev_dashboard_text_widgets_options' );
+			$options = pstoolkit_get_option_filtered( 'psource_dashboard_text_widgets_options' );
 			if ( ! empty( $options ) ) {
 				$data = array();
 				foreach ( $options as $one ) {
@@ -183,7 +183,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 				}
 				if ( ! empty( $data ) ) {
 					pstoolkit_update_option( $this->items_name, $data );
-					pstoolkit_delete_option( 'wpmudev_dashboard_text_widgets_options' );
+					pstoolkit_delete_option( 'psource_dashboard_text_widgets_options' );
 				}
 			}
 			/**

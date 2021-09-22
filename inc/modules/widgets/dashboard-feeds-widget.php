@@ -22,7 +22,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds_Widget' ) ) {
 				return;
 			}
 			if ( strlen( $options_set ) ) {
-				$this->widget_id   = 'wpmudev_dashboard_item_' . $options_set;
+				$this->widget_id   = 'psource_dashboard_item_' . $options_set;
 				$options['number'] = $options_set;
 			}
 			foreach ( $options as $key => $value ) {

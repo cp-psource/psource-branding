@@ -98,15 +98,15 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 			if ( is_multisite() ) {
 				global $current_blog;
 				if ( $current_blog->site_id == $current_blog->blog_id ) {
-					$df_widgets = get_blog_option( $current_blog->site_id, 'wpmudev_df_widget_options' );
+					$df_widgets = get_blog_option( $current_blog->site_id, 'psource_df_widget_options' );
 					if ( ! is_array( $df_widgets ) ) {
-						$df_widgets = get_option( 'wpmudev_df_widget_options' );
+						$df_widgets = get_option( 'psource_df_widget_options' );
 					}
 				} else {
-					$df_widgets = get_blog_option( $current_blog->blog_id, 'wpmudev_df_widget_options' );
+					$df_widgets = get_blog_option( $current_blog->blog_id, 'psource_df_widget_options' );
 				}
 			} else {
-				$df_widgets = get_option( 'wpmudev_df_widget_options' );
+				$df_widgets = get_option( 'psource_df_widget_options' );
 			}
 			if ( empty( $df_widgets ) || ! is_array( $df_widgets ) ) {
 				return;
@@ -145,9 +145,9 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 			}
 			pstoolkit_update_option( $this->items_name, $items );
 			if ( $this->is_network && function_exists( 'delete_blog_option' ) ) {
-				delete_blog_option( $current_blog->site_id, 'wpmudev_df_widget_options' );
+				delete_blog_option( $current_blog->site_id, 'psource_df_widget_options' );
 			}
-			delete_option( 'wpmudev_df_widget_options' );
+			delete_option( 'psource_df_widget_options' );
 		}
 
 		/**
@@ -502,7 +502,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 			if ( isset( $_POST['id'] ) ) {
 				$nonce_action = $this->get_nonce_action( $_POST['id'], 'delete' );
 			}
-			$widget_id = 'wpmudev_dashboard_item_' . $_POST['id'];
+			$widget_id = 'psource_dashboard_item_' . $_POST['id'];
 			do_action( 'pstoolkit_delete_available_widget', $widget_id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$items = $this->get_df_feed_widgets_items();
@@ -533,7 +533,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 				foreach ( $_POST['ids'] as $id ) {
 					if ( isset( $items[ $id ] ) ) {
 						unset( $items[ $id ] );
-						$widget_id = 'wpmudev_dashboard_item_' . $id;
+						$widget_id = 'psource_dashboard_item_' . $id;
 						do_action( 'pstoolkit_delete_available_widget', $widget_id );
 						$update = true;
 						continue;

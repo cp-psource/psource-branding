@@ -981,8 +981,8 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		 */
 		public function get_hide_branding_class() {
 			$class          = '';
-			$hide_branding  = apply_filters( 'wpmudev_branding_hide_branding', $this->hide_branding );
-			$branding_image = apply_filters( 'wpmudev_branding_hero_image', null );
+			$hide_branding  = apply_filters( 'psource_branding_hide_branding', $this->hide_branding );
+			$branding_image = apply_filters( 'psource_branding_hero_image', null );
 			if ( $hide_branding && ! empty( $branding_image ) ) {
 				$class = 'sui-rebranded';
 			} elseif ( $hide_branding && empty( $branding_image ) ) {
@@ -1411,8 +1411,8 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			/*$hide_footer = true;
 			$footer_text = sprintf( __( 'Made with %s by WPMU DEV', 'ub' ), ' <i class="sui-icon-heart"></i>' );
 			if ( PSToolkit_Helper::is_member() ) {
-				$hide_footer = apply_filters( 'wpmudev_branding_change_footer', $hide_footer );
-				$footer_text = apply_filters( 'wpmudev_branding_footer_text', $footer_text );
+				$hide_footer = apply_filters( 'psource_branding_change_footer', $hide_footer );
+				$footer_text = apply_filters( 'psource_branding_footer_text', $footer_text );
 				$hide_footer = apply_filters( 'pstoolkit_change_footer', $hide_footer, $this->module );
 				$footer_text = apply_filters( 'pstoolkit_footer_text', $footer_text, $this->module );
 			}
@@ -2579,26 +2579,26 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		 * @since 3.0.1
 		 */
 		public function add_action_hooks() {
-			// Filter built-in wpmudev branding script.
-			add_filter( 'wpmudev_whitelabel_plugin_pages', array( $this, 'builtin_wpmudev_branding' ) );
+			// Filter built-in psource branding script.
+			add_filter( 'psource_whitelabel_plugin_pages', array( $this, 'builtin_psource_branding' ) );
 		}
 
 		/**
-		 * Add more pages to builtin wpmudev branding.
+		 * Add more pages to builtin psource branding.
 		 *
 		 * @since 3.0.1
 		 *
-		 * @param array $plugin_pages Nextgen pages is not introduced in built in wpmudev branding.
+		 * @param array $plugin_pages Nextgen pages is not introduced in built in psource branding.
 		 *
 		 * @return array
 		 */
-		public function builtin_wpmudev_branding( $plugin_pages ) {
+		public function builtin_psource_branding( $plugin_pages ) {
 			global $hook_suffix;
 			if ( strpos( $hook_suffix, '_page_branding' ) ) {
 				$plugin_pages[ $hook_suffix ] = array(
-					'wpmudev_whitelabel_sui_plugins_branding',
-					'wpmudev_whitelabel_sui_plugins_footer',
-					'wpmudev_whitelabel_sui_plugins_doc_links',
+					'psource_whitelabel_sui_plugins_branding',
+					'psource_whitelabel_sui_plugins_footer',
+					'psource_whitelabel_sui_plugins_doc_links',
 				);
 			}
 			return $plugin_pages;
@@ -2630,7 +2630,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			 *
 			 * @since 3.0.6
 			 */
-			$hide_branding = apply_filters( 'wpmudev_branding_hide_branding', $this->hide_branding );
+			$hide_branding = apply_filters( 'psource_branding_hide_branding', $this->hide_branding );
 			if ( $hide_branding ) {
 				$classes[] = 'no-pstoolkit';
 			}
@@ -2736,7 +2736,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		 * @return string
 		 */
 		public function get_box_summary_image_style() {
-			$image_url = apply_filters( 'wpmudev_branding_hero_image', null );
+			$image_url = apply_filters( 'psource_branding_hero_image', null );
 			if ( ! empty( $image_url ) ) {
 				return 'background-image:url(' . esc_url( $image_url ) . ')';
 			}

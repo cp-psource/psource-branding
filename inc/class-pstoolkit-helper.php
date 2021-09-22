@@ -569,7 +569,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 
 		/**
 		 * Notice wraper for Static SUI notice.
-		 * https://wpmudev.github.io/shared-ui/notifications/
+		 * https://psource.github.io/shared-ui/notifications/
 		 *
 		 * @since 3.4
 		 *
@@ -609,7 +609,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 
 		/**
 		 * Notice wraper for Inline SUI notice.
-		 * https://wpmudev.github.io/shared-ui/notifications/
+		 * https://psource.github.io/shared-ui/notifications/
 		 *
 		 * @since 3.4
 		 *
@@ -4328,23 +4328,23 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 			if ( self::membership_includes_pstoolkit() ) {
 				return true;
 			}
-			if ( function_exists( 'is_wpmudev_member' ) ) {
-				return is_wpmudev_member();
+			if ( function_exists( 'is_psource_member' ) ) {
+				return is_psource_member();
 			}
 			return false;
 		}*/
 
 		/*private static function membership_includes_pstoolkit() {
 			if (
-				! method_exists( 'WPMUDEV_Dashboard_Api', 'get_membership_projects' )
-				|| ! method_exists( 'WPMUDEV_Dashboard_Api', 'get_membership_type' )
+				! method_exists( 'PSOURCE_Dashboard_Api', 'get_membership_projects' )
+				|| ! method_exists( 'PSOURCE_Dashboard_Api', 'get_membership_type' )
 			) {
 				return false;
 			}
 
 			$pstoolkit_project_id = 9135;
-			$type = WPMUDEV_Dashboard::$api->get_membership_type();
-			$projects = WPMUDEV_Dashboard::$api->get_membership_projects();
+			$type = PSOURCE_Dashboard::$api->get_membership_type();
+			$projects = PSOURCE_Dashboard::$api->get_membership_projects();
 
 			return ( 'unit' === $type && in_array( $pstoolkit_project_id, $projects, true ) )
 			       || ( 'single' === $type && $pstoolkit_project_id === $projects );
@@ -4828,9 +4828,9 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 		public static function is_debug() {
 			if ( is_null( self::$debug ) ) {
 				/**
-				 * Debug only when WP_DEBUG && WPMUDEV_BETATEST
+				 * Debug only when WP_DEBUG && PSOURCE_BETATEST
 				 */
-				$debug       = defined( 'WP_DEBUG' ) && WP_DEBUG && defined( 'WPMUDEV_BETATEST' ) && WPMUDEV_BETATEST;
+				$debug       = defined( 'WP_DEBUG' ) && WP_DEBUG && defined( 'PSOURCE_BETATEST' ) && PSOURCE_BETATEST;
 				self::$debug = apply_filters( 'pstoolkit_debug', $debug );
 			}
 

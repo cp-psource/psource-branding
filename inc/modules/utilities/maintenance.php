@@ -792,7 +792,7 @@ if ( ! class_exists( 'Branda_Maintenance_Maintenance' ) ) {
 				),
 				'countdown_till_time' => array(
 					'type'         => 'time',
-					'label'        => __( 'Bis zum', 'ub' ),
+					'label'        => __( 'Bis um', 'ub' ),
 					'description'  => array(
 						'content'  => sprintf( __( 'Die in den WordPress-Einstellungen festgelegte Zeitzone zeigt die aktuelle Zeit als %s an.', 'ub' ), current_time( 'h:ia' ) ),
 						'position' => 'bottom',

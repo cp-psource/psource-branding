@@ -146,7 +146,7 @@ if ( ! class_exists( 'PSToolkit_Login_Screen' ) ) {
 		 */
 		public function upgrade_options_module_custom_login_css() {
 			global $ub_version;
-			$compare = version_compare( $ub_version, '2.2.8' ); 
+			$compare = version_compare( $ub_version, '2.2.9' ); 
 			if ( 0 < $compare ) {
 				// Move settings from "Login CSS" module.
 				$module_name = 'custom-login-css.php';

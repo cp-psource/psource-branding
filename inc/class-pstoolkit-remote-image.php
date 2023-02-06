@@ -111,7 +111,7 @@ class KM_Download_Remote_Image {
 	}
 
 	/**
-	 * Download a remote image and insert it into the WordPress Media Library as an attachment.
+	 * Download a remote image and insert it into the ClassicPress Media Library as an attachment.
 	 *
 	 * @return bool|int The attachment ID, or false on failure.
 	 */
@@ -191,13 +191,13 @@ class KM_Download_Remote_Image {
 		);
 
 		$overrides = array(
-			// This tells WordPress to not look for the POST form
+			// This tells ClassicPress to not look for the POST form
 			// fields that would normally be present. Default is true.
 			// Since the file is being downloaded from a remote server,
 			// there will be no form fields.
 			'test_form'   => false,
 
-			// Setting this to false lets WordPress allow empty files – not recommended.
+			// Setting this to false lets ClassicPress allow empty files – not recommended.
 			'test_size'   => true,
 
 			// A properly uploaded file will pass this test.
@@ -216,7 +216,7 @@ class KM_Download_Remote_Image {
 	}
 
 	/**
-	 * Is this image MIME type supported by the WordPress Media Libarary?
+	 * Is this image MIME type supported by the ClassicPress Media Libarary?
 	 *
 	 * @param  string $mime_type The MIME type.
 	 *
@@ -276,7 +276,7 @@ class KM_Download_Remote_Image {
 	}
 
 	/**
-	 * Insert attachment into the WordPress Media Library.
+	 * Insert attachment into the ClassicPress Media Library.
 	 *
 	 * @param  string $file_path The path to the media file.
 	 * @param  string $mime_type The MIME type of the media file.

@@ -167,7 +167,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 				if ( $is_menu_item_hidden ) {
 					$this->prevent_admin_page_access( $menu_slug );
 				} elseif ( $is_menu_item_invisible && isset( $menu[ $menu_item_index ][4] ) ) {
-					// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+					// phpcs:ignore ClassicPress.WP.GlobalVariablesOverride.OverrideProhibited
 					$menu[ $menu_item_index ][4] = isset( $menu[ $menu_item_index ][4] ) ? $menu[ $menu_item_index ][4] . ' hidden' : 'hidden';
 				}
 
@@ -204,7 +204,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 						if ( $is_menu_item_hidden || $is_submenu_item_hidden ) {
 							$this->prevent_admin_page_access( $submenu_slug );
 						} elseif ( $is_submenu_item_invisible ) {
-							// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+							// phpcs:ignore ClassicPress.WP.GlobalVariablesOverride.OverrideProhibited
 							$submenu[ $menu_slug ][ $submenu_item_index ][4] = isset( $submenu[ $menu_slug ][ $submenu_item_index ][4] )
 									? $submenu[ $menu_slug ][ $submenu_item_index ][4] . ' hidden' : 'hidden';
 						}
@@ -520,7 +520,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 				),
 				'link-manager'      => array(
 					'title'       => __( 'Link Manager', 'ub' ),
-					'description' => __( 'Aktiviert den Link Manager, der in WordPress bis Version 3.5 vorhanden war.', 'ub' ),
+					'description' => __( 'Aktiviert den Link Manager, der in ClassicPress bis Version 3.5 vorhanden war.', 'ub' ),
 					'fields'      => array(
 						'status' => array(
 							'checkbox_label' => __( 'Link Manager aktivieren', 'ub' ),
@@ -537,7 +537,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 							'checkbox_label' => __( 'Admin-Tipps aktivieren', 'ub' ),
 							'type'           => 'checkbox',
 							'description'    => array(
-								'content'  => __( 'Füge im WordPress-Menü einen benutzerdefinierten Beitragstyp "Tipps" hinzu und füge Tipps für die Benutzer hinzu.', 'ub' ),
+								'content'  => __( 'Füge im ClassicPress-Menü einen benutzerdefinierten Beitragstyp "Tipps" hinzu und füge Tipps für die Benutzer hinzu.', 'ub' ),
 								'position' => 'bottom',
 							),
 							'classes'        => array( 'switch-button' ),
@@ -944,8 +944,8 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 		 * Combine default and saved menu and remove old 3party plugin's menu
 		 *
 		 * @param array $configured_menu Array menu which was configured via PSToolkit settings.
-		 * @param array $wp_menu Menu data in WordPress format
-		 * @param array $wp_submenu Submenu data in WordPress format
+		 * @param array $wp_menu Menu data in ClassicPress format
+		 * @param array $wp_submenu Submenu data in ClassicPress format
 		 * @param bool  $include_separators Include separator.
 		 *
 		 * @return array
@@ -1387,7 +1387,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 						unset( $allowed_submenus[ $parent ] );
 					}
 				}
-				$submenu = $allowed_submenus; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+				$submenu = $allowed_submenus; // phpcs:ignore ClassicPress.WP.GlobalVariablesOverride.OverrideProhibited
 			}
 			if ( ! empty( $saved_menu['menu'] ) && is_array( $saved_menu['menu'] ) && $capability_object ) {
 				$allowed_menus = $saved_menu['menu'];
@@ -1418,7 +1418,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Menu' ) ) {
 						}
 					}
 				}
-				$menu = $allowed_menus; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+				$menu = $allowed_menus; // phpcs:ignore ClassicPress.WP.GlobalVariablesOverride.OverrideProhibited
 			}
 
 			if ( $capability_object && ! $capability_object->has_cap( 'list_users' ) ) {

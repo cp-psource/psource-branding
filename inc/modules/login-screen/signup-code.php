@@ -543,7 +543,7 @@ if ( ! class_exists( 'PSToolkit_Signup_Codes' ) ) {
 
 		/**
 		 * Adds an additional field for Blog description,
-		 * on signup form for WordPress or Buddypress
+		 * on signup form for ClassicPress or Buddypress
 		 *
 		 * @param type $errors
 		 */

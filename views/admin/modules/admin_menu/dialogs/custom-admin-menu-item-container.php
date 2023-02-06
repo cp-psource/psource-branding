@@ -3,7 +3,7 @@
 		<?php if ( ! empty( $no_menu_items ) ) { ?>
 			<div class="sui-box-builder-body">
 			<?php
-			echo PSToolkit_Helper::sui_notice( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo PSToolkit_Helper::sui_notice( // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 				sprintf(
 					esc_html__( 'Wenn Du hier kein Admin-Menüelement siehst, besuche bitte die %1$sDashboard-Seite%2$s Deiner Hauptseite und kehre auf diese Seite zurück, um die Admin-Menüelemente anzupassen.', 'ub' ),
 					'<a href="' . esc_url( admin_url() ) . '" target="_blank">',

@@ -11,5 +11,5 @@
 	</div>
 	<input type="hidden" name="simple_options[{{{data.section_key}}}][{{{data.id}}}][]" value="{{{data.value}}}" class="attachment-id" />
 </div>
-<?php echo PSToolkit_Helper::sui_inline_notice( 'pstoolkit-only-images' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+<?php echo PSToolkit_Helper::sui_inline_notice( 'pstoolkit-only-images' ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 </script>

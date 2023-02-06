@@ -258,7 +258,7 @@ if ( ! class_exists( 'PSToolkit_Document' ) ) {
 				),
 				'shortcode_gallery' => array(
 					'title'       => __( 'Shortcode [gallery]', 'ub' ),
-					'description' => __( 'Eine ausführliche Beschreibung der Galerie-Shortcode-Option findest Du auf der Codex-Seite: <a href="https://codex.wordpress.org/Gallery_Shortcode" target="_blank">Galerie-Shortcode</a>.', 'ub' ),
+					'description' => __( 'Eine ausführliche Beschreibung der Galerie-Shortcode-Option findest Du auf der Codex-Seite: <a href="https://codex.classicpress.org/Gallery_Shortcode" target="_blank">Galerie-Shortcode</a>.', 'ub' ),
 					'show-as'     => 'accordion',
 					'fields'      => array(
 						'orderby'    => array(

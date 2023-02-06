@@ -134,7 +134,7 @@ if ( ! class_exists( 'PSToolkit_Import' ) ) {
 						if ( $version_compare ) {
 							$args['cancel_url'] = $this->get_cancel_url();
 							$args['version']    = $data['version'];
-							$args['product']    = __( 'Psource WP Toolkit', 'ub' );
+							$args['product']    = __( 'Psource CP Toolkit', 'ub' );
 							$template           = 'admin/modules/import/errors/version';
 							$content            = $this->render( $template, $args, true );
 							return $content;
@@ -605,7 +605,7 @@ if ( ! class_exists( 'PSToolkit_Import' ) ) {
 		}
 
 		/**
-		 * Import image to local WordPress
+		 * Import image to local ClassicPress
 		 *
 		 * @since 3.1.0
 		 *

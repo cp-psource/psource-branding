@@ -1,6 +1,6 @@
 <div class="sui-header">
 	<?php $this->render( 'admin/modules/import/header' ); ?>
-	<?php echo PSToolkit_Helper::sui_notice( esc_html__( 'Dadurch werden die vorhandenen Konfigurationen jedes ausgewählten Moduls überschrieben.', 'ub' ), 'warning' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+	<?php echo PSToolkit_Helper::sui_notice( esc_html__( 'Dadurch werden die vorhandenen Konfigurationen jedes ausgewählten Moduls überschrieben.', 'ub' ), 'warning' ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 </div>
 <form method="post" action="<?php echo esc_url( $action ); ?>">
 	<section id="sui-pstoolkit-content" class="sui-container pstoolkit-avoid-flag">

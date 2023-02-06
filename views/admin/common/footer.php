@@ -23,7 +23,7 @@ if ( PSToolkit_Helper::is_member() ) {
 } else {
 	?>
 <ul class="sui-footer-nav">
-	<li><a href="https://profiles.wordpress.org/psource#content-plugins" target="_blank"><?php esc_html_e( 'Free Plugins', 'ub' ); ?></a></li>
+	<li><a href="https://profiles.classicpress.org/psource#content-plugins" target="_blank"><?php esc_html_e( 'Free Plugins', 'ub' ); ?></a></li>
 	<li><a href="https://n3rds.work/features/" target="_blank"><?php esc_html_e( 'Membership', 'ub' ); ?></a></li>
 	<li><a href="https://n3rds.work/roadmap/" target="_blank"><?php esc_html_e( 'Roadmap', 'ub' ); ?></a></li>
 	<li><a href="https://n3rds.work/docs/" target="_blank"><?php esc_html_e( 'Docs', 'ub' ); ?></a></li>

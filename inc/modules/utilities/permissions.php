@@ -488,7 +488,7 @@ if ( ! class_exists( 'PSToolkit_Permissions' ) ) {
 				AND (u.display_name LIKE %s OR m_fn.meta_value LIKE %s OR m_ln.meta_value LIKE %s OR u.user_email LIKE %s)
 			";
 			$filter = '%' . $filter . '%';
-			// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+			// phpcs:ignore ClassicPress.DB.PreparedSQL.NotPrepared
 			$sql = $wpdb->prepare(
 				$sql,
 				$filter,
@@ -498,7 +498,7 @@ if ( ! class_exists( 'PSToolkit_Permissions' ) ) {
 			);
 
 			// Now we have a list of all users, no matter which blog they belong to.
-			// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
+			// phpcs:ignore ClassicPress.DB.PreparedSQL.NotPrepared
 			$res = $wpdb->get_results( $sql );
 
 			// Filter users by capabilty.

@@ -729,7 +729,7 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 			$blog_description = get_option( 'blogdescription' );
 			$date             = date_i18n( get_option( 'date_format' ) );
 			$time             = date_i18n( get_option( 'time_format' ) );
-			$message          = __( 'Dies ist eine Testnachricht, die ich ausprobieren möchte, um zu sehen, ob sie funktioniert. Dies wird durch WordPress-E-Mail-Inhalte ersetzt.', 'ub' );
+			$message          = __( 'Dies ist eine Testnachricht, die ich ausprobieren möchte, um zu sehen, ob sie funktioniert. Dies wird durch ClassicPress-E-Mail-Inhalte ersetzt.', 'ub' );
 			$message         .= PHP_EOL;
 			$message         .= PHP_EOL;
 			$message         .= __( 'Funktioniert es wie gewünscht?', 'ub' );

@@ -11,7 +11,7 @@
 	</div>
 	<div class="sui-box-body">
 		<?php
-			echo PSToolkit_Helper::sui_notice( esc_html__( 'Selected module does not exists or is not available.', 'ub' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo PSToolkit_Helper::sui_notice( esc_html__( 'Selected module does not exists or is not available.', 'ub' ) ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 		?>
 	</div>
 </div>

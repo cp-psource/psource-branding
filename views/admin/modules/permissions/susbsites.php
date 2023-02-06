@@ -1,6 +1,6 @@
 <?php
 if ( empty( $groups ) ) {
-	echo PSToolkit_Helper::sui_notice( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo PSToolkit_Helper::sui_notice( // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 		esc_html__( 'There is no any module to allow override settings.', 'ub' )
 	);
 	return;

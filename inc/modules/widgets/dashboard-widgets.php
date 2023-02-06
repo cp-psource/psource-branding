@@ -241,7 +241,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 				),
 				'text'       => array(
 					'title'       => __( 'Text-Widgets', 'ub' ),
-					'description' => __( 'Füge dem WordPress-Dashboard Text-Widgets mit Deinen benutzerdefinierten Inhalten hinzu.', 'ub' ),
+					'description' => __( 'Füge dem ClassicPress-Dashboard Text-Widgets mit Deinen benutzerdefinierten Inhalten hinzu.', 'ub' ),
 					'fields'      => array(
 						'list' => array(
 							'type'     => 'callback',

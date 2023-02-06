@@ -11,7 +11,7 @@
 	}
 	?>
 			</div>
-	<?php echo $button_plus; // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+	<?php echo $button_plus; // phpcs:disable ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</div>
 	</div>
 </div>

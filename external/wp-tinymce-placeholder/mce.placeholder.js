@@ -42,7 +42,7 @@
 			}
 
 			// Add 1 second timeout to delay execution until after
-			// WordPress adjusts the toolbars
+			// ClassicPress adjusts the toolbars
 			setTimeout( function () {
 				label.check();
 			}, 1000 );

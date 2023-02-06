@@ -1,7 +1,7 @@
 <div class="sui-builder-field" data-nonce="<?php echo esc_attr( $nonce ); ?>" data-id="<?php echo esc_attr( $id ); ?>">
 	<div class="sui-builder-field-label">
 	<?php
-		// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
+		// phpcs:disable ClassicPress.Security.EscapeOutput.OutputNotEscaped
 		printf(
 			'<div class="pstoolkit-field-image" aria-hidden="true"><img class="pstoolkit-circle-image" src="%s">
 														</div>',

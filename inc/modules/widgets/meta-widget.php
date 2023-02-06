@@ -28,7 +28,7 @@ if ( ! class_exists( 'PSToolkit_Meta_Widget' ) ) {
 			$options       = array(
 				'desc' => array(
 					'title'       => __( 'Rebranding', 'ub' ),
-					'description' => __( 'Das Meta-Widget wird mit Deinem Webseiten-Link anstelle des Standard-Links „WordPress.org“ umbenannt.', 'ub' ),
+					'description' => __( 'Das Meta-Widget wird mit Deinem Webseiten-Link anstelle des Standard-Links „ClassicPress.org“ umbenannt.', 'ub' ),
 					'fields'      => array(
 						'html' => array(
 							'type'  => 'description',

@@ -23,7 +23,7 @@ $url = add_query_arg(
 		<?php } else { ?>
 			<span class="pstoolkit-module-for-pro"><?php echo esc_attr( $module['name'] ); ?></span>
 			&nbsp;
-			<?php echo PSToolkit_Helper::maybe_pro_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php echo PSToolkit_Helper::maybe_pro_tag(); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 		<?php } ?>
 	</td>
 	<td class="sui-table--status<?php echo $for_pro ? ' pstoolkit-module-for-pro' : ''; ?>">

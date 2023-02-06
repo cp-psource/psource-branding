@@ -65,7 +65,7 @@ if ( ! class_exists( 'PSToolkit_Site_Generator' ) ) {
 					'fields'      => array(
 						'text'    => array(
 							'label'       => __( 'Text', 'ub' ),
-							'placeholder' => 'WordPress',
+							'placeholder' => 'ClassicPress',
 						),
 						'link'    => array(
 							'label' => __( 'Link', 'ub' ),

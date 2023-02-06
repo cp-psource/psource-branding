@@ -294,7 +294,7 @@ if ( ! class_exists( 'PSToolkit_Images' ) ) {
 				),
 				'images'  => array(
 					'title'       => __( 'Bilddateigrößenbeschränkung', 'ub' ),
-					'description' => sprintf( __( 'Überschreibe das Standard-WordPress-Upload-Limit von %dMb für verschiedene Benutzerrollen.', 'ub' ), round( $this->get_wp_limit() / 1000 ) ),
+					'description' => sprintf( __( 'Überschreibe das Standard-ClassicPress-Upload-Limit von %dMb für verschiedene Benutzerrollen.', 'ub' ), round( $this->get_wp_limit() / 1000 ) ),
 					'fields'      => array(
 						'override' => array(
 							'checkbox_label' => __( 'Upload-Limit überschreiben', 'ub' ),

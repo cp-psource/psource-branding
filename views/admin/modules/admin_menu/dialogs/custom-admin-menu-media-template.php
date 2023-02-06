@@ -26,5 +26,5 @@ $input_name  = empty( $input_name ) ? '' : $input_name;
 		<input type="hidden" class="attachment-id" value="{{ data.id }}" name="<?php echo esc_attr( $input_name ); ?>"/>
 	</div>
 
-	<?php echo PSToolkit_Helper::sui_inline_notice( 'pstoolkit-only-images' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+	<?php echo PSToolkit_Helper::sui_inline_notice( 'pstoolkit-only-images' ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 </script>

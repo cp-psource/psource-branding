@@ -17,7 +17,7 @@ if ( $is_empty ) {
 	?>
 	<div class="sui-box-body">
 		<?php
-			echo PSToolkit_Helper::sui_notice( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo PSToolkit_Helper::sui_notice( // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 				esc_html__( 'Wir haben momentan nicht genügend Daten. Sobald Du mit dem Plugin interagierst, werden wir Daten sammeln und Deine häufig verwendeten Module hier anzeigen.', 'ub' ),
 				'default'
 			);

@@ -1,32 +1,23 @@
 <?php
 /*
-Plugin Name: PS Toolkit
+Plugin Name: ClassicPress Toolkit
 Plugin URI: https://n3rds.work/piestingtal_source/psourcewp-toolkit/
-Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von WordPress-Links und Branding und vielem mehr.
+Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von ClassicPress-Links und Branding und vielem mehr.
 Author: WMS N@W
 Version: 2.2.9
 Author URI: https://n3rds.work/
 Text_domain: ub
 
-Copyright 2020 WMS N@W (https://n3rds.work)
+Copyright 2020-2023 WMS N@W (https://n3rds.work)
 
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
 the Free Software Foundation.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- */
+*/
 
 /**
- * PSOURCE WP Toolkit Version
+ * PSOURCE CP Toolkit Version
  */
 
 require 'external/psource-plugin-update/plugin-update-checker.php';

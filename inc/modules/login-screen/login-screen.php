@@ -1590,7 +1590,7 @@ if ( ! class_exists( 'PSToolkit_Login_Screen' ) ) {
 				'content_invalid_username'   => array(
 					'type'        => 'textarea',
 					'label'       => __( 'Ungültiger Benutzername', 'ub' ),
-					'description' => __( 'Verwende den Platzhalter "<strong>{WP_LOSTPASSWORD_URL}</strong>", um ihn durch WordPress zu ersetzen.', 'ub' ),
+					'description' => __( 'Verwende den Platzhalter "<strong>{WP_LOSTPASSWORD_URL}</strong>", um ihn durch ClassicPress zu ersetzen.', 'ub' ),
 					'default'     => $invalid_username,
 				),
 				'content_empty_password'     => array(
@@ -1601,7 +1601,7 @@ if ( ! class_exists( 'PSToolkit_Login_Screen' ) ) {
 				'content_incorrect_password' => array(
 					'type'        => 'textarea',
 					'label'       => __( 'Ungültiges Passwort', 'ub' ),
-					'description' => __( 'Verwende den Platzhalter "<strong>{WP_LOSTPASSWORD_URL}</strong>", "USERNAME", um ihn durch WordPress zu ersetzen.', 'ub' ),
+					'description' => __( 'Verwende den Platzhalter "<strong>{WP_LOSTPASSWORD_URL}</strong>", "USERNAME", um ihn durch ClassicPress zu ersetzen.', 'ub' ),
 					'default'     => $invalid_password,
 					'accordion'   => array(
 						'end' => true,

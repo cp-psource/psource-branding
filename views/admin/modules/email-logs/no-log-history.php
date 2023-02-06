@@ -12,7 +12,7 @@ $notice = static::maybe_add_smtp_notice();
 	<h2><?php esc_html_e( 'Noch kein Protokollverlauf!', 'ub' ); ?></h2>
 	<?php if ( $notice ) { ?>
 		<div style="text-align: left;">
-			<?php echo $notice; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php echo $notice; // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</div>
 	<?php } else { ?>
 		<p><?php esc_html_e( 'Du hast noch keine Protokolle. Wenn Du dies hast, kannst Du hier alle Protokolle anzeigen.', 'ub' ); ?></p>

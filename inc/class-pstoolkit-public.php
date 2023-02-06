@@ -10,7 +10,7 @@ if ( ! class_exists( 'PSToolkit_Public' ) ) {
 			parent::__construct();
 			add_action( 'plugins_loaded', array( $this, 'load_modules' ) );
 			/**
-			 * Add Psource WP Toolkit submenu to Customize on Admin Bar
+			 * Add Psource CP Toolkit submenu to Customize on Admin Bar
 			 *
 			 * @since 1.0.0
 			 */
@@ -39,7 +39,7 @@ if ( ! class_exists( 'PSToolkit_Public' ) ) {
 		}
 
 		/**
-		 * Add Psource WP Toolkit to "Customize" as submenu.
+		 * Add Psource CP Toolkit to "Customize" as submenu.
 		 *
 		 * @since 1.0.0
 		 */
@@ -51,7 +51,7 @@ if ( ! class_exists( 'PSToolkit_Public' ) ) {
 			$args = array(
 				'parent' => 'customize',
 				'id'     => 'pstoolkit',
-				'title'  => __( 'Psource WP Toolkit', 'ub' ),
+				'title'  => __( 'Psource CP Toolkit', 'ub' ),
 				'href'   => add_query_arg( 'page', 'branding', admin_url( 'admin.php' ) ),
 			);
 			$wp_admin_bar->add_menu( $args );

@@ -375,7 +375,7 @@ if ( ! class_exists( 'PSToolkit_SMTP' ) ) {
 				'plugins'             => array(),
 				'header'              => array(
 					'title'       => __( 'Von Kopfzeile', 'ub' ),
-					'description' => __( 'Wähle die Standardeinstellung aus E-Mail-ID und Name für alle ausgehenden WordPress-E-Mails.', 'ub' ),
+					'description' => __( 'Wähle die Standardeinstellung aus E-Mail-ID und Name für alle ausgehenden ClassicPress-E-Mails.', 'ub' ),
 					'fields'      => array(
 						'from_email'      => array(
 							'label'       => __( 'Absender-E-Mail-Adresse', 'ub' ),
@@ -633,7 +633,7 @@ if ( ! class_exists( 'PSToolkit_SMTP' ) ) {
 					'name' => 'SendGrid',
 				),
 				'mailgun/mailgun.php'                     => array(
-					'name' => 'Mailgun for WordPress',
+					'name' => 'Mailgun for ClassicPress',
 				),
 				'wp-mail-bank/wp-mail-bank.php'           => array(
 					'name'  => 'WP Mail Bank',

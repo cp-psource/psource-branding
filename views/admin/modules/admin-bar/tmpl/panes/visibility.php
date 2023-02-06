@@ -46,7 +46,7 @@ if ( 0 !== i % ( 12 / columns ) ) {
 		<div class="sui-tabs-content">
 			<div class="sui-tab-boxed <# if ( 'show' === data.mobile ) { #>active<# } #>" data-tab-content="pstoolkit-admin-bar-mobile-{{{data.id}}}-show">
 				<?php
-				echo PSToolkit_Helper::sui_notice( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo PSToolkit_Helper::sui_notice( // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 					esc_html__( 'Stelle sicher dass Du auf der Registerkarte ALLGEMEIN ein Symbol für diesen Menüpunkt festgelegt hast, da auf Mobilgeräten nur das Menüsymbol angezeigt wird.', 'ub' ),
 					'default'
 				);

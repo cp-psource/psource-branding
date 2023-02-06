@@ -11,13 +11,13 @@ $notice = static::maybe_add_smtp_notice();
 if ( $notice ) {
 	?>
 	<div class="sui-box-body">
-		<?php echo $notice; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		<?php echo $notice; // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 	</div>
 <?php } ?>
 
 <?php
 	// Filter Bar.
-	echo $filter_bar_top; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo $filter_bar_top; // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 ?>
 
 <table class="sui-table sui-table-flushed sui-accordion">
@@ -72,10 +72,10 @@ if ( $notice ) {
 							<?php
 							$cell = ! empty( $entry[ $key ] ) ? $entry[ $key ] : '';
 							if ( key( array_slice( $columns, -1 ) ) !== $key ) { // not last column.
-								echo $cell; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+								echo $cell; // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 							} else {
 								?>
-								<div class="pstoolkit-ellipsised-last-cell"><?php echo $cell; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></div>
+								<div class="pstoolkit-ellipsised-last-cell"><?php echo $cell; // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?></div>
 								<span class="sui-accordion-open-indicator">
 									<span class="sui-icon-chevron-down" aria-hidden="true"></span>
 									<span class="sui-screen-reader-text"><?php esc_html_e( 'Klicke zum Öffnen', 'ub' ); ?></span>
@@ -107,7 +107,7 @@ if ( $notice ) {
 												<?php
 												if ( ! empty( $entry[ $key ] ) ) {
 													// Make emails are clickable.
-													// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+													// phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 													echo in_array( $key, array( 'from_email', 'recipient' ), true ) ? PSToolkit_Email_Logs::make_email_clickable( $entry[ $key ] ) : $entry[ $key ];
 												}
 												?>
@@ -148,7 +148,7 @@ if ( $notice ) {
 
 						</div>
 
-						<?php echo $this->get_dialog_delete( $_id ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						<?php echo $this->get_dialog_delete( $_id ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 
 					</td>
 
@@ -161,7 +161,7 @@ if ( $notice ) {
 			<tr>
 				<td colspan="4">
 					<div class="sui-box-body">
-						<?php echo PSToolkit_Helper::sui_notice( esc_html__( 'Es wurden keine E-Mail-Protokolle gefunden.', 'ub' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						<?php echo PSToolkit_Helper::sui_notice( esc_html__( 'Es wurden keine E-Mail-Protokolle gefunden.', 'ub' ) ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</div>
 				</td>
 			</tr>
@@ -174,4 +174,4 @@ if ( $notice ) {
 
 <?php
 	// Filter Bar.
-	echo $filter_bar_bottom; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo $filter_bar_bottom; // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped

@@ -74,7 +74,7 @@ if ( ! class_exists( 'PSToolkit_Base' ) ) {
 			if ( $this->is_network ) {
 				$args = array(
 					'id'     => 'network-admin-branding',
-					'title'  => __( 'Psource WP Toolkit', 'ub' ),
+					'title'  => __( 'Psource CP Toolkit', 'ub' ),
 					'href'   => add_query_arg( 'page', 'branding', network_admin_url( 'admin.php' ) ),
 					'parent' => 'network-admin',
 				);

@@ -418,7 +418,7 @@ if ( ! class_exists( 'PSToolkit_Email_Logs' ) ) {
 
 			self::set_csv_header( $filename );
 
-			$fp      = fopen( 'php://memory', 'w' ); // phpcs:disable WordPress.WP.AlternativeFunctions.file_system_read_fopen -- disable phpcs because it writes memory
+			$fp      = fopen( 'php://memory', 'w' ); // phpcs:disable ClassicPress.WP.AlternativeFunctions.file_system_read_fopen -- disable phpcs because it writes memory
 			$entries = self::get_csv_data( $id );
 			foreach ( $entries as $entry ) {
 				$fields = $entry;
@@ -712,7 +712,7 @@ if ( ! class_exists( 'PSToolkit_Email_Logs' ) ) {
 		private function upgrade_to_pro() {
 			$args     = array(
 				'utm_campaign' => 'pstoolkit_emaillogs_upgrade',
-				'description'  => __( 'Mit dem Psource WP Toolkit erhältat Du detaillierte Informationen zu Deinen E-Mails. Du kannst die Empfängerinformationen überprüfen und den gesamten Protokollverlauf exportieren.', 'ub' ),
+				'description'  => __( 'Mit dem Psource CP Toolkit erhältat Du detaillierte Informationen zu Deinen E-Mails. Du kannst die Empfängerinformationen überprüfen und den gesamten Protokollverlauf exportieren.', 'ub' ),
 			);
 			$template = '/admin/common/modules/only-for-pro';
 			$content  = $this->render( $template, $args, true );

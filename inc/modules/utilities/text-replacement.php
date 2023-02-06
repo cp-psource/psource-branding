@@ -340,7 +340,7 @@ if ( ! class_exists( 'PSToolkit_Text_Replacement' ) ) {
 			$domain_description  = __( 'Gib die Textdomäne ein, um den Text nur für ein bestimmtes Plugin/Theme zu ersetzen. Die Textdomäne von PSToolkit lautet beispielsweise "ub".', 'ub' );
 			$domain_description .= sprintf(
 				' <a href="%s" target="_blank">%s</a>',
-				esc_url( __( 'https://codex.wordpress.org/I18n_for_WordPress_Developers#Text_Domains', 'ub' ) ),
+				esc_url( __( 'https://codex.classicpress.org/I18n_for_ClassicPress_Developers#Text_Domains', 'ub' ) ),
 				__( 'Klicke hier, um mehr über Textdomänen zu erfahren.', 'ub' )
 			);
 			$config              = array(

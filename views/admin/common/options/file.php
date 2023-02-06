@@ -7,4 +7,4 @@
 	</div>
 </div>
 <?php
-echo PSToolkit_Helper::sui_inline_notice( 'pstoolkit-wrong-filetype' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+echo PSToolkit_Helper::sui_inline_notice( 'pstoolkit-wrong-filetype' ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped

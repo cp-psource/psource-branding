@@ -1,6 +1,6 @@
 <?php
 /**
- * Psource WP Toolkit Admin Bar class.
+ * Psource CP Toolkit Admin Bar class.
  *
  * Class that handle admin bar functionality.
  *
@@ -444,7 +444,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 						$value[ $node->id ] = $title;
 					}
 				}
-				$value['wp-logo']     = __( 'WordPress-Menü', 'ub' );
+				$value['wp-logo']     = __( 'ClassicPress-Menü', 'ub' );
 				$value['site-name']   = __( 'Webseite-Menü', 'ub' );
 				$value['my-sites']    = __( 'Meine Webseiten', 'ub' );
 				$value['new-content'] = __( 'Neu hinzufügen', 'ub' );
@@ -474,7 +474,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 			$options = array(
 				'logo'       => array(
 					'title'       => __( 'Logo', 'ub' ),
-					'description' => __( 'Ersetze das Standard-WordPress-Logo in der Admin-Leiste durch Dein eigenes. ', 'ub' ),
+					'description' => __( 'Ersetze das Standard-ClassicPress-Logo in der Admin-Leiste durch Dein eigenes. ', 'ub' ),
 					'fields'      => array(
 						'logo' => array(
 							'type' => 'media',
@@ -563,7 +563,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 				),
 				'css'        => array(
 					'title'       => __( 'Benutzerdefinierte CSS', 'ub' ),
-					'description' => __( 'Füge der Admin-Leiste benutzerdefinierte CSS-Stile hinzu. Kein anderer Teil von WordPress ist betroffen.', 'ub' ),
+					'description' => __( 'Füge der Admin-Leiste benutzerdefinierte CSS-Stile hinzu. Kein anderer Teil von ClassicPress ist betroffen.', 'ub' ),
 					'fields'      => array(
 						'css' => array(
 							'type'          => 'css_editor',

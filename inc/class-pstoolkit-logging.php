@@ -58,7 +58,7 @@ class UB_Logging {
 	 *
 	 * @param array/obj $logs     required     The array of logs we want to prune
 	 *
-	 * @uses wp_delete_post()                      Deletes the post from WordPress
+	 * @uses wp_delete_post()                      Deletes the post from ClassicPress
 	 *
 	 * @filter ub_logging_force_delete_log         Allows user to override the force delete setting which bypasses the trash
 	 */

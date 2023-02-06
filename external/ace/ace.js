@@ -1,4 +1,4 @@
-/*! Psource WP Toolkit - v3.4.1
+/*! Psource CP Toolkit - v3.4.1
  * https://n3rds.work/piestingtal_source/psourcewp-toolkit/
  * Copyright (c) 2020; * Licensed GPLv2+ */
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }

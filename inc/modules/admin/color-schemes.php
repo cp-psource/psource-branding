@@ -259,7 +259,7 @@ if ( ! class_exists( 'PSToolkit_Color_Schemes' ) ) {
 			 * Default Color Scheme
 			 */
 			$colors_default  = array(
-				'do-not-change' => __( 'WordPress Standard', 'ub' ),
+				'do-not-change' => __( 'ClassicPress Standard', 'ub' ),
 			);
 			$colors_default += $colors;
 			/**

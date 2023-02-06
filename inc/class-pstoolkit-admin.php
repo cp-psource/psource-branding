@@ -140,7 +140,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			 */
 			add_filter( 'pstoolkit_sui_wrap_class', array( $this, 'add_sui_wrap_classes' ) );
 			/**
-			 * Delete image from modules, when it is deleted from WordPress
+			 * Delete image from modules, when it is deleted from ClassicPress
 			 *
 			 * @since 3.1.0
 			 */
@@ -273,7 +273,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		}
 
 		public function setup_translation() {
-			// Load up the localization file if we're using WordPress in a different language
+			// Load up the localization file if we're using ClassicPress in a different language
 			// Place it in this plugin's "languages" folder and name it "mp-[value in wp-config].mo"
 			$dir = sprintf( '/%s/languages', basename( pstoolkit_dir( '' ) ) );
 			load_plugin_textdomain( 'ub', false, $dir );
@@ -654,8 +654,8 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			/*if ( ! PSToolkit_Helper::is_member() ) {
 				$menu = add_submenu_page(
 					'branding',
-					__( 'Psource WP Toolkit', 'ub' ),
-					__( 'Psource WP Toolkit', 'ub' ),
+					__( 'Psource CP Toolkit', 'ub' ),
+					__( 'Psource CP Toolkit', 'ub' ),
 					$capability,
 					'pstoolkit_pro',
 					array( $this, 'handle_pstoolkit_pro' )
@@ -2638,7 +2638,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		}
 
 		/**
-		 * Delete image from modules, when it is deleted from WordPress
+		 * Delete image from modules, when it is deleted from ClassicPress
 		 *
 		 * @since 3.1.0
 		 */

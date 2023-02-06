@@ -669,7 +669,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 
 		/**
 		 * Load SocialLogos style.
-		 * https://wpcalypso.wordpress.com/devdocs/design/social-logos
+		 * https://wpcalypso.classicpress.com/devdocs/design/social-logos
 		 *
 		 * @since 1.9.7
 		 * @since 1.0.0 Added `module_key` argument.
@@ -700,7 +700,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 
 		/**
 		 * Get SocialLogos style URL.
-		 * https://wpcalypso.wordpress.com/devdocs/design/social-logos
+		 * https://wpcalypso.classicpress.com/devdocs/design/social-logos
 		 *
 		 * @since 1.9.7
 		 */
@@ -711,7 +711,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 
 		/**
 		 * SocialLogos social icons.
-		 * https://wpcalypso.wordpress.com/devdocs/design/social-logos
+		 * https://wpcalypso.classicpress.com/devdocs/design/social-logos
 		 *
 		 * @since 1.9.7
 		 */
@@ -744,7 +744,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 				'twitter'     => array( 'label' => __( 'Twitter', 'ub' ) ),
 				'vimeo'       => array( 'label' => __( 'Vimeo', 'ub' ) ),
 				'whatsapp'    => array( 'label' => __( 'Whatsapp', 'ub' ) ),
-				'wordpress'   => array( 'label' => __( 'WordPress', 'ub' ) ),
+				'classicpress'   => array( 'label' => __( 'ClassicPress', 'ub' ) ),
 				'xanga'       => array( 'label' => __( 'Xanga', 'ub' ) ),
 				'youtube'     => array( 'label' => __( 'Youtube', 'ub' ) ),
 			);
@@ -2130,7 +2130,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 					'type'        => 'sui-tab',
 					'label'       => __( 'Hintergrund Schnitt', 'ub' ),
 					'description' => array(
-						'content' => __( 'Diese Einstellung funktioniert nur mit Bildern, die der WordPress-Medienbibliothek hinzugefügt wurden.', 'ub' ),
+						'content' => __( 'Diese Einstellung funktioniert nur mit Bildern, die der ClassicPress-Medienbibliothek hinzugefügt wurden.', 'ub' ),
 					),
 					'options'     => array(
 						'auto'   => array(
@@ -4740,7 +4740,7 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 		}
 
 		/**
-		 * Insert attachment into the WordPress Media Library.
+		 * Insert attachment into the ClassicPress Media Library.
 		 *
 		 * @param  string $file_path The path to the media file.
 		 * @param  string $mime_type The MIME type of the media file.

@@ -1,7 +1,7 @@
 <?php
 /**
  * Dashicons list
- * based on https://developer.wordpress.org/resource/dashicons/
+ * based on https://developer.classicpress.org/resource/dashicons/
  * date: 2018-09-08
  */
 
@@ -214,7 +214,7 @@ $_pstoolkit_dashicons_list = array(
 	),
 
 	'icons'                      => array(
-		'title' => __( 'WordPress.org Specific: Jobs, Profiles, WordCamps', 'ub' ),
+		'title' => __( 'ClassicPress.org Specific: Jobs, Profiles, WordCamps', 'ub' ),
 		'icons' => array(
 			'f308' => 'hammer',
 			'f309' => 'art',
@@ -233,8 +233,8 @@ $_pstoolkit_dashicons_list = array(
 	'internal/products'          => array(
 		'title' => __( 'Produkte', 'ub' ),
 		'icons' => array(
-			'f120' => 'wordpress',
-			'f324' => 'wordpress-alt',
+			'f120' => 'classicpress',
+			'f324' => 'classicpress-alt',
 			'f157' => 'pressthis',
 			'f463' => 'update',
 			'f180' => 'screenoptions',

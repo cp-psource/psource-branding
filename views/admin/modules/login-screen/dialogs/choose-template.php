@@ -1,7 +1,7 @@
 <p class="sui-description"><?php esc_html_e( 'Passe eine unserer vorgefertigten Anmeldevorlagen an oder gestalte die Anmeldeseite von Grund auf neu.', 'ub' ); ?></p>
 <?php
 if ( $show_warning ) {
-	echo PSToolkit_Helper::sui_notice( esc_html__( 'Sei vorsichtig, wenn Du eine Vorlage änderst, wird die von Dir vorgenommene Anpassung außer Kraft gesetzt.', 'ub' ), 'warning' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo PSToolkit_Helper::sui_notice( esc_html__( 'Sei vorsichtig, wenn Du eine Vorlage änderst, wird die von Dir vorgenommene Anpassung außer Kraft gesetzt.', 'ub' ), 'warning' ); // phpcs:ignore ClassicPress.Security.EscapeOutput.OutputNotEscaped
 }
 ?>
 <div class="sui-box-selectors">

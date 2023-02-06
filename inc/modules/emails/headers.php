@@ -75,7 +75,7 @@ if ( ! class_exists( 'PSToolkit_Email_Headers' ) ) {
 			$options      = array(
 				'headers'  => array(
 					'title'       => __( 'Email von', 'ub' ),
-					'description' => __( 'Wähl die Standard-Absender-E-Mail und den Absendernamen für alle ausgehenden WordPress-E-Mails.', 'ub' ),
+					'description' => __( 'Wähl die Standard-Absender-E-Mail und den Absendernamen für alle ausgehenden ClassicPress-E-Mails.', 'ub' ),
 					'fields'      => array(
 						'email' => array(
 							'label' => __( 'Absender-E-Mail-Adresse', 'ub' ),

@@ -794,7 +794,7 @@ if ( ! class_exists( 'PSToolkit_Maintenance_Maintenance' ) ) {
 					'type'         => 'time',
 					'label'        => __( 'Bis um', 'ub' ),
 					'description'  => array(
-						'content'  => sprintf( __( 'Die in den WordPress-Einstellungen festgelegte Zeitzone zeigt die aktuelle Zeit als %s an.', 'ub' ), current_time( 'h:ia' ) ),
+						'content'  => sprintf( __( 'Die in den ClassicPress-Einstellungen festgelegte Zeitzone zeigt die aktuelle Zeit als %s an.', 'ub' ), current_time( 'h:ia' ) ),
 						'position' => 'bottom',
 					),
 					'master'       => $this->get_name( 'timer' ),

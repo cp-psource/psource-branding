@@ -115,7 +115,7 @@ if ( ! class_exists( 'PSToolkit_Export' ) ) {
 			 * Data to export
 			 */
 			$data = array(
-				'name'            => 'PS Toolkit',
+				'name'            => 'CP Toolkit',
 				'url'             => 'https://n3rds.work/piestingtal_source/psourcewp-toolkit/',
 				'version'         => apply_filters( 'pstoolkit_version', 0 ),
 				'timestamp'       => time(),

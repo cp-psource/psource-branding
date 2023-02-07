@@ -15,17 +15,16 @@ This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
 the Free Software Foundation.
 */
-
-/**
- * PSOURCE CP Toolkit Version
- */
-
-require 'external/psource-plugin-update/plugin-update-checker.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=psource-branding', 
+require 'psource/psource-plugin-update/psource-plugin-updater.php';
+use Psource\PluginUpdateChecker\v5\PucFactory;
+$MyUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=psource-branding', 
 	__FILE__, 
 	'psource-branding' 
 );
+/**
+ * PSOURCE CP Toolkit Version
+ */
 
 $ub_version = null;
 

@@ -726,7 +726,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 							'label'       => __( 'Widget-Inhalt', 'ub' ),
 							'type'        => 'wp_editor',
 							'value'       => isset( $item['content'] ) ? $item['content'] : '',
-							'placeholder' => esc_html__( 'Add your help sidebar content here…', 'ub' ),
+							'placeholder' => esc_html__( 'Füge hier den Inhalt Deiner Hilfeseitenleiste hinzu…', 'ub' ),
 						),
 					),
 				),

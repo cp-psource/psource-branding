@@ -607,7 +607,7 @@ $this->render(
 					</div>
 					<div class="sui-accordion-item">
 						<div class="sui-accordion-item-header">
-							<div class="sui-accordion-item-title"><?php esc_html_e( 'Admin Bar', 'ub' ); ?></div>
+							<div class="sui-accordion-item-title"><?php esc_html_e( 'Admin-Leiste', 'ub' ); ?></div>
 							<div class="sui-accordion-col-auto">
 								<button type="button" class="sui-button-icon sui-accordion-open-indicator" aria-label="<?php esc_html_e( 'Öffne Element', 'ub' ); ?>"><i class="sui-icon-chevron-down" aria-hidden="true"></i></button>
 							</div>

@@ -13,7 +13,7 @@
 			</div>
 			<div class="sui-box-footer pstoolkit-welcome-footer-step1 sui-content-center sui-flatten">
 				<div class="sui-form-field sui-actions-center">
-					<button class="sui-button sui-button-blue pstoolkit-welcome-all-modules" type="button" data-nonce="<?php echo wp_create_nonce( 'pstoolkit-welcome-all-modules' ); ?>"><?php echo esc_html_x( 'Activate Modules', 'button', 'ub' ); ?></button>
+					<button class="sui-button sui-button-blue pstoolkit-welcome-all-modules" type="button" data-nonce="<?php echo wp_create_nonce( 'pstoolkit-welcome-all-modules' ); ?>"><?php echo esc_html_x( 'Module aktivieren', 'button', 'ub' ); ?></button>
 				</div>
 			</div>
 			<div class="sui-box-footer pstoolkit-welcome-footer-step1 pstoolkit-welcome-footer-close sui-content-center  sui-flatten">
@@ -24,7 +24,7 @@
 			<div class="sui-box-footer pstoolkit-welcome-footer-step2 sui-content-center sui-flatten">
 				<div class="sui-form-field sui-actions-center">
 					<button type="button" class="sui-modal-close sui-button sui-button-ghost" data-modal-close=""><?php echo esc_html_x( 'Skip', 'button', 'ub' ); ?></button>
-					<button class="sui-button sui-button-blue pstoolkit-welcome-activate" type="button" data-nonce="<?php echo wp_create_nonce( 'pstoolkit-welcome-activate' ); ?>"><?php echo esc_html_x( 'Activate', 'button', 'ub' ); ?></button>
+					<button class="sui-button sui-button-blue pstoolkit-welcome-activate" type="button" data-nonce="<?php echo wp_create_nonce( 'pstoolkit-welcome-activate' ); ?>"><?php echo esc_html_x( 'Aktivieren', 'button', 'ub' ); ?></button>
 				</div>
 			</div>
 		</div>

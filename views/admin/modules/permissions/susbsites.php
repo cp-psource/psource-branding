@@ -41,7 +41,7 @@ foreach ( $groups as $group_key => $modules ) {
 			<label class="sui-checkbox">
 				<input type="checkbox" class="all"  <?php checked( $counter[ $group_key ]['all'], $counter[ $group_key ]['active'] ); ?> />
 				<span aria-hidden="true"></span>
-				<span><?php esc_html_e( 'All', 'ub' ); ?></span>
+				<span><?php esc_html_e( 'Alle', 'ub' ); ?></span>
 			</label>
 			<div class="sui-box">
 	<?php

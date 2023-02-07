@@ -306,7 +306,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 			$order = $this->sanitize_request_payload( $_POST['order'] );
 			if ( is_array( $order ) && count( $order ) > 0 ) {
 				$this->set_value( 'settings', 'order', $order );
-				wp_send_json_success( array( 'message' => __( 'Admin Bar Sortierung wurde erfolgreich gespeichert!', 'ub' ) ) );
+				wp_send_json_success( array( 'message' => __( 'Admin-Leiste Sortierung wurde erfolgreich gespeichert!', 'ub' ) ) );
 			}
 			$this->json_error();
 		}
@@ -572,8 +572,8 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 								array(
 									'title'     => '',
 									'selectors' => array(
-										'#wpadminbar' => __( 'Admin Bar', 'ub' ),
-										'#wpadminbar .ab-item:before, #wpadminbar .ab-item .ab-icon:before' => __( 'Admin Bar Symbol', 'ub' ),
+										'#wpadminbar' => __( 'Admin-Leiste', 'ub' ),
+										'#wpadminbar .ab-item:before, #wpadminbar .ab-item .ab-icon:before' => __( 'Admin-Leiste Symbol', 'ub' ),
 										'#wpadminbar a.ab-item, #wpadminbar span.ab-label' => __( 'Menüpunkt', 'ub' ),
 									),
 								),

@@ -284,7 +284,7 @@ if ( ! class_exists( 'PSToolkit_Document' ) ) {
 							'label'       => __( 'Sortierreihenfolge', 'ub' ),
 							'options'     => array(
 								'do-not-change' => __( 'Nicht ändern', 'ub' ),
-								'ASC'           => __( 'Aufsteigend (WP Standard)', 'ub' ),
+								'ASC'           => __( 'Aufsteigend (CP Standard)', 'ub' ),
 								'DESC'          => __( 'Absteigend', 'ub' ),
 							),
 							'default'     => 'do-not-change',
@@ -325,7 +325,7 @@ if ( ! class_exists( 'PSToolkit_Document' ) ) {
 							'label'       => __( 'Vorschaubild Link', 'ub' ),
 							'options'     => array(
 								'do-not-change' => __( 'Nicht ändern', 'ub' ),
-								'attachment'    => __( 'Anhangsseite (WP-Standard)', 'ub' ),
+								'attachment'    => __( 'Anhangsseite (CP-Standard)', 'ub' ),
 								'file'          => __( 'Link zur Bilddatei', 'ub' ),
 								'none'          => __( 'Kein Link', 'ub' ),
 							),

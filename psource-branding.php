@@ -6,7 +6,8 @@ Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Ad
 Author: WMS N@W
 Version: 2.2.9
 Author URI: https://n3rds.work/
-Text_domain: ub
+Text Domain: ub
+Domain Path: /languages
 
 Copyright 2020-2023 WMS N@W (https://n3rds.work)
 

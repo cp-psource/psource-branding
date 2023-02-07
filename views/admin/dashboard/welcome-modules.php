@@ -12,7 +12,7 @@ foreach ( $groups as $group_key => $group ) {
 		esc_html( $id )
 	);
 	echo '<span aria-hidden="true"></span>';
-	printf( '<span>%s</span>', esc_html__( 'All', 'ub' ) );
+	printf( '<span>%s</span>', esc_html__( 'Alle', 'ub' ) );
 	echo '</label>';
 	foreach ( $modules[ $group_key ]['modules'] as $key => $module ) {
 		$id = sprintf( 'pstoolkit-%s-%s', $group_key, $key );

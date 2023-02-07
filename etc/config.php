@@ -109,7 +109,7 @@ function pstoolkit_get_modules_list( $mode = 'full' ) {
 		),
 		'admin/bar.php'                         => array(
 			'module'         => 'admin-bar',
-			'name'           => __( 'Admin Bar', 'ub' ),
+			'name'           => __( 'Admin-Leiste', 'ub' ),
 			'description'    => __( 'Passe die Admin-Leiste so an, dass Du das Logo der Admin-Leiste ändern, die Sichtbarkeit von Menüelementen steuern, benutzerdefinierte Menüelemente hinzufügen oder die vorhandenen neu anordnen kannst.', 'ub' ),
 			'public'         => true,
 			'group'          => 'admin',

@@ -266,7 +266,7 @@ if ( ! class_exists( 'PSToolkit_Document' ) ) {
 							'label'       => __( 'Sortieren nach', 'ub' ),
 							'options'     => array(
 								'do-not-change' => __( 'Nicht ändern', 'ub' ),
-								'menu_order'    => __( 'Bildreihenfolge in der Registerkarte Galerie festgelegt (WP-Standard)', 'ub' ),
+								'menu_order'    => __( 'Bildreihenfolge in der Registerkarte Galerie festgelegt (CP-Standard)', 'ub' ),
 								'title'         => __( 'Titel des Bildes', 'ub' ),
 								'post_date'     => __( 'Datum/Uhrzeit', 'ub' ),
 								'rand'          => __( 'Zufällig', 'ub' ),
@@ -309,7 +309,7 @@ if ( ! class_exists( 'PSToolkit_Document' ) ) {
 							'label'       => __( 'Thumbnail Größe', 'ub' ),
 							'options'     => array(
 								'do-not-change' => __( 'Nicht ändern', 'ub' ),
-								'thumbnail'     => __( 'Vorschaubild (WP Standard)', 'ub' ),
+								'thumbnail'     => __( 'Vorschaubild (CP Standard)', 'ub' ),
 								'medium'        => __( 'Mittel', 'ub' ),
 								'large'         => __( 'Groß', 'ub' ),
 								'full'          => __( 'Voll', 'ub' ),

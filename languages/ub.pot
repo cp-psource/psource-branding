@@ -1184,7 +1184,7 @@ msgid "Bildposition:"
 msgstr ""
 
 #: inc/modules/front-end/document.php:269
-msgid "Bildreihenfolge in der Registerkarte Galerie festgelegt (WP-Standard)"
+msgid "Bildreihenfolge in der Registerkarte Galerie festgelegt (CP-Standard)"
 msgstr ""
 
 #: inc/modules/front-end/author-box.php:1175
@@ -6443,7 +6443,7 @@ msgid "Vorschau ist nicht verfügbar. Speichere zuerst die Einstellungen!"
 msgstr ""
 
 #: inc/modules/front-end/document.php:312
-msgid "Vorschaubild (WP Standard)"
+msgid "Vorschaubild (CP Standard)"
 msgstr ""
 
 #: inc/modules/front-end/document.php:325
@@ -7024,7 +7024,7 @@ msgid "Y Versatz"
 msgstr ""
 
 #: views/admin/modules/permissions/row.php:15
-msgid "You"
+msgid "Du"
 msgstr ""
 
 #: inc/modules/emails/headers.php:113 inc/modules/emails/headers.php:114

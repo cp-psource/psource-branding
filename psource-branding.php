@@ -5,7 +5,7 @@ Plugin URI: https://n3rds.work/cp_psource/classicpress-toolkit/
 Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
 Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von ClassicPress-Links und Branding und vielem mehr.
 Author: WMS N@W
-Version: 2.2.9
+Version: 2.3.0
 Author URI: https://n3rds.work/
 Text Domain: ub
 Domain Path: /languages

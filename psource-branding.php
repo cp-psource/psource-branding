@@ -1,7 +1,8 @@
 <?php
 /*
 Plugin Name: ClassicPress Toolkit
-Plugin URI: https://n3rds.work/piestingtal_source/psourcewp-toolkit/
+Plugin URI: https://n3rds.work/cp_psource/classicpress-toolkit/
+Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
 Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von ClassicPress-Links und Branding und vielem mehr.
 Author: WMS N@W
 Version: 2.2.9

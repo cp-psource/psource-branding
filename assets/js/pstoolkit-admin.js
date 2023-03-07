@@ -1,5 +1,5 @@
 /*! Psource CP Toolkit - v3.4.1
- * https://n3rds.work/piestingtal_source/psourcewp-toolkit/
+ * https://n3rds.work/cp_psource/classicpress-toolkit/
  * Copyright (c) 2020; * Licensed GPLv2+ */
 /* global window, jQuery  */
 

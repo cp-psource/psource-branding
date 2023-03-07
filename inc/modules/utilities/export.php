@@ -116,7 +116,7 @@ if ( ! class_exists( 'PSToolkit_Export' ) ) {
 			 */
 			$data = array(
 				'name'            => 'CP Toolkit',
-				'url'             => 'https://n3rds.work/piestingtal_source/psourcewp-toolkit/',
+				'url'             => 'https://n3rds.work/cp_psource/classicpress-toolkit/',
 				'version'         => apply_filters( 'pstoolkit_version', 0 ),
 				'timestamp'       => time(),
 				'date'            => date( 'c' ),

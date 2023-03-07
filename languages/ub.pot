@@ -3625,7 +3625,7 @@ msgid "https://n3rds.work/"
 msgstr ""
 
 #. URI of the plugin
-msgid "https://n3rds.work/piestingtal_source/psourcewp-toolkit/"
+msgid "https://n3rds.work/cp_psource/classicpress-toolkit/"
 msgstr ""
 
 #: views/admin/dashboard/modules/frequently-used.php:3

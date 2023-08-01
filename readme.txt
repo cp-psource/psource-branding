@@ -68,6 +68,10 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 == Changelog ==
 
+= 2.3.1 =
+
+* Fix: PHP Deprecated: Required parameter
+
 = 2.3.0 =
 
 * Only ClassicPress

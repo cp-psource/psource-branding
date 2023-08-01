@@ -583,7 +583,7 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 		/**
 		 * Prepare inline styles
 		 **/
-		public function do_inline_styles( $contents = '', $styles ) {
+		public function do_inline_styles( $styles, $contents = '' ) {
 			if ( $contents && $styles ) {
 				if ( ! class_exists( 'CssToInlineStyles' ) ) {
 					require_once $this->plugin_dir . 'lib/builder/css-inline.php';
@@ -897,7 +897,7 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 		 *
 		 * @return type
 		 */
-		public function short_str( $str, $after = '', $length ) {
+		public function short_str( $str, $length, $after = '' ) {
 			if ( empty( $str ) ) {
 				$str = explode( ' ', get_the_title(), $length );
 			} else {

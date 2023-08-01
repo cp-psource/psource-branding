@@ -898,6 +898,8 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 		 * @return type
 		 */
 		public function short_str( $str, $length, $after = '' ) {
+			$length = (int) $length; // Stellt sicher, dass $length ein Integer ist
+		
 			if ( empty( $str ) ) {
 				$str = explode( ' ', get_the_title(), $length );
 			} else {

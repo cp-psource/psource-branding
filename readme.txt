@@ -68,6 +68,10 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 == Changelog ==
 
+= 2.3.2 =
+
+* Fix: Konflikt mit eMail-Templates
+
 = 2.3.1 =
 
 * Fix: PHP Deprecated: Required parameter

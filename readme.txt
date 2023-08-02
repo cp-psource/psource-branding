@@ -71,6 +71,7 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 = 2.3.2 =
 
 * Fix: Konflikt mit eMail-Templates
+* Fix: PHP Fatal error im Email-Log
 
 = 2.3.1 =
 

@@ -4,7 +4,7 @@ Author URI: https://github.com/cp-psource
 Tags: classicpress-plugin, classicpress, white label classicpress, custom login page, login page customizer, whitelabel, customize system emails, customize default emails, rebrand, rebranding, coming soon page, maintenance mode, under construction page, coming soon template, login screen
 Requires at least: 4.6
 Tested up to: 5.6
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 Requires PHP: 5.6.20
 License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -49,6 +49,7 @@ More than 30 modules included in CP Toolkit!
 
 * Fix: Konflikt mit eMail-Templates
 * Fix: PHP Fatal error im Email-Log
+* Updater 1.3
 
 = 2.3.1 =
 

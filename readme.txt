@@ -1,4 +1,4 @@
-=== ClassicPress Toolkit ===
+=== PSOURCE Toolkit ===
 Contributors: DerN3rd (WMS N@W)
 Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
 Author: DerN3rd (WMS N@W)

@@ -1,8 +1,7 @@
 <?php
 /*
-Plugin Name: ClassicPress Toolkit
+Plugin Name: PSOURCE Toolkit
 Plugin URI: https://n3rds.work/cp_psource/classicpress-toolkit/
-Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
 Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von ClassicPress-Links und Branding und vielem mehr.
 Author: WMS N@W
 Version: 2.3.1
@@ -10,20 +9,26 @@ Author URI: https://n3rds.work/
 Text Domain: ub
 Domain Path: /languages
 
-Copyright 2020-2023 WMS N@W (https://n3rds.work)
+Copyright 2020-2024 WMS N@W (https://n3rds.work)
 
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
 the Free Software Foundation.
 */
-require 'psource/psource-plugin-update/psource-plugin-updater.php';
-use Psource\PluginUpdateChecker\v5\PucFactory;
-$MyUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=psource-branding', 
-	__FILE__, 
-	'psource-branding' 
+
+require 'psource/psource-plugin-update/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/cp-psource/psource-branding',
+	__FILE__,
+	'psource-branding'
 );
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
+
 /**
  * PSOURCE CP Toolkit Version
  */

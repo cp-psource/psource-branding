@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClassicPress Toolkit\n"
+"Project-Id-Version: PSOURCE Toolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-07 14:03+0000\n"
 "PO-Revision-Date: 2023-02-08 23:04+0000\n"
@@ -1469,8 +1469,8 @@ msgid "ClassicPress Standard"
 msgstr "Classic Press Default"
 
 #. Name of the plugin
-msgid "ClassicPress Toolkit"
-msgstr "ClassicPress Toolkit"
+msgid "PSOURCE Toolkit"
+msgstr "PSOURCE Toolkit"
 
 #: inc/modules/admin/bar.php:447
 msgid "ClassicPress-Menü"

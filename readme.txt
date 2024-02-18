@@ -1,8 +1,6 @@
 === PSOURCE Toolkit ===
-Contributors: DerN3rd (WMS N@W)
-Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
-Author: DerN3rd (WMS N@W)
-Author URI: https://n3rds.work/
+Contributors: DerN3rd (PSOURCE)
+Author URI: https://github.com/cp-psource
 Tags: classicpress-plugin, classicpress, white label classicpress, custom login page, login page customizer, whitelabel, customize system emails, customize default emails, rebrand, rebranding, coming soon page, maintenance mode, under construction page, coming soon template, login screen
 Requires at least: 4.6
 Tested up to: 5.6
@@ -40,31 +38,10 @@ On your personal blog, this isn't a big problem, but for a small business, desig
 
 More than 30 modules included in CP Toolkit!
 
-[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/cp-powersource/)
+[POWERED BY PSOURCE](https://github.com/cp-psource)
 
 [Projektseite](https://n3rds.work/cp_psource/classicpress-toolkit/)
-[Supportforum](https://n3rds.work/forum/cp-toolkit-supportforum/)
 [GitHub](https://github.com/cp-psource/psource-branding)
-
-== Mehr PSOURCE ==
-
-= PS EVENTS PLUGIN =
-
-Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-classicpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
-Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
-
-Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
-
-== Hilf uns ==
-
-Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
-Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
-
-= Unterstütze uns =
-
-Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
-
-Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
 
 == Changelog ==
 

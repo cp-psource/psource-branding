@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ClassicPress Toolkit\n"
+"Project-Id-Version: PSOURCE Toolkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-07 14:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -1433,7 +1433,7 @@ msgid "ClassicPress Standard"
 msgstr ""
 
 #. Name of the plugin
-msgid "ClassicPress Toolkit"
+msgid "PSOURCE Toolkit"
 msgstr ""
 
 #: inc/modules/admin/bar.php:447

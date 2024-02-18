@@ -205,7 +205,7 @@ if ( ! class_exists( 'PSToolkit_Email_Logs_CPT' ) ) {
 				$items[] = array(
 					'id'         => $id,
 					'post_title' => $post->post_title,
-					'date'       => wp_date( 'F d, Y @ h:ia', strtotime( $post->post_date_gmt ) ),
+					'date'       => date( 'F d, Y @ h:ia', strtotime( $post->post_date_gmt ) ),
 					'recipient'  => get_post_meta( $id, $prefix . 'recipient', true ),
 					'from_name'  => get_post_meta( $id, $prefix . 'from_name', true ),
 					'from_email' => get_post_meta( $id, $prefix . 'from_email', true ),

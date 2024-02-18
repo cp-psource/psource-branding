@@ -1,4 +1,4 @@
-=== ClassicPress Toolkit ===
+=== PSOURCE Toolkit ===
 Contributors: DerN3rd (WMS N@W)
 Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
 Author: DerN3rd (WMS N@W)
@@ -67,6 +67,11 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
 
 == Changelog ==
+
+= 2.3.2 =
+
+* Fix: Konflikt mit eMail-Templates
+* Fix: PHP Fatal error im Email-Log
 
 = 2.3.1 =
 

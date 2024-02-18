@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: PSOURCE Toolkit
-Plugin URI: https://n3rds.work/cp_psource/classicpress-toolkit/
+Plugin URI: https://cp-psource.github.io/psource-branding/
 Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von ClassicPress-Links und Branding und vielem mehr.
-Author: WMS N@W
+Author: PSOURCE
 Version: 2.3.1
-Author URI: https://n3rds.work/
+Author URI: https://github.com/cp-psource
 Text Domain: ub
 Domain Path: /languages
 
-Copyright 2020-2024 WMS N@W (https://n3rds.work)
+Copyright 2020-2024 PSOURCE (https://github.com/cp-psource)
 
 
 This program is free software; you can redistribute it and/or modify

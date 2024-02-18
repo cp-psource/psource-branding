@@ -40,7 +40,7 @@ More than 30 modules included in CP Toolkit!
 
 [POWERED BY PSOURCE](https://github.com/cp-psource)
 
-[Projektseite](https://n3rds.work/cp_psource/classicpress-toolkit/)
+[Projektseite](https://cp-psource.github.io/psource-branding/)
 [GitHub](https://github.com/cp-psource/psource-branding)
 
 == Changelog ==

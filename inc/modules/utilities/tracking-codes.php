@@ -805,7 +805,7 @@ if ( ! class_exists( 'PSToolkit_Tracking_Codes' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_delete() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id, 'delete' );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$data = $this->local_get_value();
@@ -831,7 +831,7 @@ if ( ! class_exists( 'PSToolkit_Tracking_Codes' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_bulk_delete() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id, 'delete' );
 			$this->check_input_data( $nonce_action, array( 'ids' ) );
 			$data   = $this->local_get_value();
@@ -908,7 +908,7 @@ if ( ! class_exists( 'PSToolkit_Tracking_Codes' ) ) {
 		 * @since 3.0.1
 		 */
 		public function ajax_reset() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( 'reset', $id );
 			$this->check_input_data( $nonce_action );
 			$data = $this->local_get_value();

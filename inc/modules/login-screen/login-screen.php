@@ -2697,7 +2697,7 @@ if ( ! class_exists( 'PSToolkit_Login_Screen' ) ) {
 		public function ajax_set_template() {
 			$nonce_action = $this->get_nonce_action( 'template' );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
-			$id  = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id  = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$uba = pstoolkit_get_uba_object();
 			/**
 			 * reset settings by scratch
@@ -3015,8 +3015,8 @@ if ( ! class_exists( 'PSToolkit_Login_Screen' ) ) {
 			if ( 'on' !== $value ) {
 				return $wp_error;
 			}
-			$password_1 = filter_input( INPUT_POST, 'password_1', FILTER_SANITIZE_STRING );
-			$password_2 = filter_input( INPUT_POST, 'password_2', FILTER_SANITIZE_STRING );
+			$password_1 = filter_input( INPUT_POST, 'password_1', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+			$password_2 = filter_input( INPUT_POST, 'password_2', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( empty( $password_1 ) ) {
 				$wp_error->add( 'password_1', __( '<strong>FEHLER</strong>: Bitte Passwort eingeben.', 'ub' ) );
 			} elseif ( $password_1 !== $password_2 ) {
@@ -3035,8 +3035,8 @@ if ( ! class_exists( 'PSToolkit_Login_Screen' ) ) {
 			if ( is_admin() || 'on' !== $value ) {
 				return $results;
 			}
-			$password_1 = filter_input( INPUT_POST, 'password_1', FILTER_SANITIZE_STRING );
-			$password_2 = filter_input( INPUT_POST, 'password_2', FILTER_SANITIZE_STRING );
+			$password_1 = filter_input( INPUT_POST, 'password_1', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+			$password_2 = filter_input( INPUT_POST, 'password_2', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( empty( $password_1 ) ) {
 				$results['errors']->add( 'password_1', __( '<strong>FEHLER</strong>: Bitte Passwort eingeben.', 'ub' ) );
 			} elseif ( $password_1 !== $password_2 ) {

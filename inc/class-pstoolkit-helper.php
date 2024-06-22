@@ -4084,13 +4084,13 @@ if ( ! class_exists( 'PSToolkit_Helper' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_search_subsite() {
-			$user_id      = filter_input( INPUT_GET, 'user_id', FILTER_SANITIZE_STRING );
+			$user_id      = filter_input( INPUT_GET, 'user_id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action_name( 'search', $user_id );
 			$this->check_input_data( $nonce_action, array( 'user_id', 'q' ) );
 			if ( ! function_exists( 'get_sites' ) ) {
 				$this->json_error();
 			}
-			$q = filter_input( INPUT_GET, 'q', FILTER_SANITIZE_STRING );
+			$q = filter_input( INPUT_GET, 'q', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( empty( $q ) ) {
 				$this->json_error();
 			}

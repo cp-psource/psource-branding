@@ -175,7 +175,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Panel_Tips' ) ) {
 			/**
 			 * Sanitize input
 			 */
-			$nonce   = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_STRING );
+			$nonce   = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$user_id = filter_input( INPUT_POST, 'user_id', FILTER_SANITIZE_NUMBER_INT );
 			$post_id = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT );
 			/**
@@ -221,7 +221,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Panel_Tips' ) ) {
 		 */
 		public function profile_option_update() {
 			global $user_id;
-			$show_tips = intval( filter_input( INPUT_POST, $this->profile_show_tips_name, FILTER_SANITIZE_STRING ) );
+			$show_tips = intval( filter_input( INPUT_POST, $this->profile_show_tips_name, FILTER_SANITIZE_FULL_SPECIAL_CHARS ) );
 			$show_tips = 0 === $show_tips ? 'no' : 'yes';
 			update_user_meta( $user_id, $this->profile_show_tips_name, $show_tips );
 		}

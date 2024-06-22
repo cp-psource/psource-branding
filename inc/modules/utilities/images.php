@@ -755,8 +755,8 @@ if ( ! class_exists( 'PSToolkit_Images' ) ) {
 				) {
 					continue;
 				}
-				$amount = intval( filter_var( $_POST['limits'][ $slug ]['amount'], FILTER_SANITIZE_STRING ) );
-				$quant  = filter_var( $_POST['limits'][ $slug ]['quantity'], FILTER_SANITIZE_STRING );
+				$amount = intval( filter_var( $_POST['limits'][ $slug ]['amount'], FILTER_SANITIZE_FULL_SPECIAL_CHARS ) );
+				$quant  = filter_var( $_POST['limits'][ $slug ]['quantity'], FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 				$value  = $amount * $this->quant[ $quant ];
 				if ( $max <= $value ) {
 					continue;

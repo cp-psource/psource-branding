@@ -1378,18 +1378,21 @@ if ( ! class_exists( 'Simple_Options' ) ) {
 								 * field before
 								 */
 								$field = '';
-								if ( isset( $data['field_before'] ) ) {
+								if (isset($data['field_before'])) {
 									$field .= $data['field_before'];
 								}
+
+								$value = isset($value) ? $value : '';
+
 								$field .= sprintf(
 									'<input type="%s" id="%s" name="%s" value="%s" class="%s" id="%s" %s />',
-									esc_attr( $data['type'] ),
-									esc_attr( $html_id ),
-									esc_attr( $field_name ),
-									esc_attr( stripslashes( $value ) ),
-									isset( $data['classes'] ) ? esc_attr( implode( ' ', $data['classes'] ) ) : '',
-									esc_attr( $html_id ),
-									implode( ' ', $extra )
+									esc_attr($data['type']),
+									esc_attr($html_id),
+									esc_attr($field_name),
+									esc_attr(is_string($value) ? stripslashes($value) : ''),
+									isset($data['classes']) ? esc_attr(implode(' ', $data['classes'])) : '',
+									esc_attr($html_id),
+									implode(' ', $extra)
 								);
 								/**
 								 * field after
@@ -1743,9 +1746,9 @@ if ( ! class_exists( 'Simple_Options' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_reset_section() {
-			$section     = filter_input( INPUT_POST, 'section', FILTER_SANITIZE_STRING );
-			$module      = filter_input( INPUT_POST, 'module', FILTER_SANITIZE_STRING );
-			$nonce       = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_STRING );
+			$section     = filter_input( INPUT_POST, 'section', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+			$module      = filter_input( INPUT_POST, 'module', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+			$nonce       = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$option_name = pstoolkit_get_option_name_by_module( $module );
 			if (
 				empty( $section )

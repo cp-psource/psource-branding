@@ -685,7 +685,7 @@ if ( ! class_exists( 'PSToolkit_Color_Schemes' ) ) {
 				 * exception for name
 				 */
 				if ( 'scheme_name' === $key ) {
-					$data[ $key ] = filter_var( $value, FILTER_SANITIZE_STRING );
+					$data[ $key ] = filter_var( $value, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 				} else {
 					$value = strtolower( $value );
 					if (

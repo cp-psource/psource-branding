@@ -121,9 +121,9 @@ if ( ! class_exists( 'PSToolkit_Base' ) ) {
 		}
 
 		protected function get_current_page() {
-			$page = filter_input( INPUT_GET, 'page', FILTER_SANITIZE_STRING );
+			$page = filter_input( INPUT_GET, 'page', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( empty( $page ) ) {
-				$page = filter_input( INPUT_POST, 'page', FILTER_SANITIZE_STRING );
+				$page = filter_input( INPUT_POST, 'page', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			}
 			if ( empty( $page ) ) {
 				$page = 'branding';

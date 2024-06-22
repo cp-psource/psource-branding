@@ -1187,7 +1187,7 @@ jQuery( window.document ).ready( function($) {
 	/**
 	 * Trigger tab change when mobile dropdown is changed.
 	 */
-    $( '#pstoolkit-mobile-nav' ).change(function () {
+    $( '#pstoolkit-mobile-nav' ).on('change', function () {
         var tab = $(this).val();
         $('a[data-tab="' + tab + '"]').trigger('click');
     });

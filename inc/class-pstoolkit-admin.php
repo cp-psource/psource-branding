@@ -342,7 +342,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 				$sui_body_class   = "sui-$sanitize_version";
 				wp_register_script(
 					'sui-scripts',
-					pstoolkit_url( 'assets/js/shared-ui.min.js' ),
+					pstoolkit_url( 'assets/js/shared-ui.js' ),
 					array( 'jquery', 'clipboard', 'pstoolkit-sui-ace', 'pstoolkit-sui-a11y-dialog', 'pstoolkit-sui-select2' ),
 					$sui_body_class,
 					true
@@ -1576,15 +1576,15 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			/**
 			 * module
 			 */
-			$input_module = filter_input( INPUT_POST, 'module', FILTER_SANITIZE_STRING );
-			if ( empty( $input_module ) ) {
-				$input_module = filter_input( INPUT_GET, 'module', FILTER_SANITIZE_STRING );
+			$input_module = filter_input(INPUT_POST, 'module', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+			if (empty($input_module)) {
+				$input_module = filter_input(INPUT_GET, 'module', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 			}
-			$is_empty = empty( $input_module );
-			if ( ! $is_empty ) {
-				if ( 'dashboard' !== $input_module ) {
-					foreach ( $this->configuration as $module ) {
-						if ( isset( $module['module'] ) && $input_module === $module['module'] ) {
+			$is_empty = empty($input_module);
+			if (!$is_empty) {
+				if ('dashboard' !== $input_module) {
+					foreach ($this->configuration as $module) {
+						if (isset($module['module']) && $input_module === $module['module']) {
 							$this->module = $module['module'];
 							return;
 						}
@@ -2382,9 +2382,9 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_copy_settings() {
-			$target = filter_input( INPUT_POST, 'target_module', FILTER_SANITIZE_STRING );
-			$source = filter_input( INPUT_POST, 'source_module', FILTER_SANITIZE_STRING );
-			$nonce  = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_STRING );
+			$target = filter_input( INPUT_POST, 'target_module', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+			$source = filter_input( INPUT_POST, 'source_module', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+			$nonce  = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if (
 				empty( $target )
 				|| empty( $source )
@@ -2532,7 +2532,7 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_welcome() {
-			$nonce = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_STRING );
+			$nonce = filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( ! wp_verify_nonce( $nonce, 'pstoolkit-welcome-all-modules' ) ) {
 				$args = array(
 					'message' => $this->messages['security'],

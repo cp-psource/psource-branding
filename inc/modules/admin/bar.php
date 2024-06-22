@@ -334,7 +334,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 		 * Reset menu items to default order
 		 */
 		public function ajax_submenu_restore() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action );
 			$items = $this->get_value( 'settings', 'items', array() );
@@ -1276,7 +1276,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Bar' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_delete_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$items = $this->get_value( 'settings', 'items', array() );
@@ -1724,7 +1724,7 @@ UBSTYLE;
 		 * @since 3.1.0
 		 */
 		public function ajax_get_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$items = $this->get_value( 'settings', 'items', array() );

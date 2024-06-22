@@ -155,7 +155,7 @@ if ( ! class_exists( 'PSToolkit_SMTP' ) ) {
 			if ( is_wp_error( $this->is_ready ) ) {
 				$this->json_error( $this->is_ready->get_error_message() );
 			}
-			$email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
+			$email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$email = sanitize_email( $email );
 			if ( ! is_email( $email ) ) {
 				$this->json_error( __( 'Senden nicht möglich: falsche E-Mail-Adresse.', 'ub' ) );
@@ -663,10 +663,10 @@ if ( ! class_exists( 'PSToolkit_SMTP' ) ) {
 		}
 
 		public function ajax_deactivate_coflicted_plugin() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'mode' ) );
-			$mode = filter_input( INPUT_POST, 'mode', FILTER_SANITIZE_STRING );
+			$mode = filter_input( INPUT_POST, 'mode', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			switch ( $mode ) {
 				case 'deactivate':
 					$plugin = wp_unslash( $id );

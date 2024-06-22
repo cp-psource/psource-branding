@@ -621,7 +621,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 							}
 							break;
 						case 'show_summary':
-							$v = filter_input( INPUT_POST, $key, FILTER_SANITIZE_STRING );
+							$v = filter_input( INPUT_POST, $key, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 							if ( preg_match( '/^(excerpt|full)$/', $v ) ) {
 								$value = $v;
 							}
@@ -630,7 +630,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 						case 'show_date':
 						case 'site':
 						case 'network':
-							$v = filter_input( INPUT_POST, $key, FILTER_SANITIZE_STRING );
+							$v = filter_input( INPUT_POST, $key, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 							if ( preg_match( '/^(hide|show)$/', $v ) ) {
 								$value = $v;
 							}
@@ -639,7 +639,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 							$value = max( 1, filter_input( INPUT_POST, $key, FILTER_SANITIZE_NUMBER_INT ) );
 							break;
 						default:
-							$value = filter_input( INPUT_POST, $key, FILTER_SANITIZE_STRING );
+							$value = filter_input( INPUT_POST, $key, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 							break;
 					}
 					$data[ $key ] = $value;
@@ -728,14 +728,14 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Feeds' ) ) {
 		 * @since 3.0.1
 		 */
 		public function ajax_get_site_data() {
-			$id = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$this->check_input_data( $this->get_nonce_action( 'link', $id ), array( 'id', 'url' ) );
 			$url = filter_input( INPUT_POST, 'url', FILTER_VALIDATE_URL );
 			/**
 			 * try to add protocol
 			 */
 			if ( false === $url ) {
-				$url = filter_input( INPUT_POST, 'url', FILTER_SANITIZE_STRING );
+				$url = filter_input( INPUT_POST, 'url', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 				if ( ! preg_match( '/^https?:/', $url ) ) {
 					$url = filter_var( 'http://' . $url, FILTER_VALIDATE_URL );
 				}

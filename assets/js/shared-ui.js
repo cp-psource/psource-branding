@@ -546,7 +546,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
             e.preventDefault();
         });
-        $('body').mouseup(function(e) {
+        $('body').on('mouseup', function(e) {
             var $anchor = $('.sui-2-9-6 .sui-dropdown-anchor');
 
             if (!$anchor.is(e.target) && 0 === $anchor.has(e.target).length) {
@@ -3072,7 +3072,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
             handle.on('click', stateToggle);
             value.on('click', stateToggle);
             jq.on('focus', stateOpen);
-            $(document).click(function onOutsideClick(ev) {
+            $(document).on('click', function onOutsideClick(ev) {
                 var jq = $(ev.target),
                     selectID;
 

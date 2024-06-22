@@ -536,7 +536,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_save_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$message      = __( 'Das Dashboard-Widget wurde erstellt.', 'ub' );
 			$this->check_input_data( $nonce_action, array( 'id', 'title', 'content' ) );
@@ -551,11 +551,11 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 			$item         = wp_parse_args(
 				array(
 					'id'           => $id,
-					'title'        => filter_input( INPUT_POST, 'title', FILTER_SANITIZE_STRING ),
+					'title'        => filter_input( INPUT_POST, 'title', FILTER_SANITIZE_FULL_SPECIAL_CHARS ),
 					'content'      => $content,
 					'content_meta' => apply_filters( 'the_content', $content ),
-					'site'         => filter_input( INPUT_POST, 'site', FILTER_SANITIZE_STRING ),
-					'network'      => filter_input( INPUT_POST, 'network', FILTER_SANITIZE_STRING ),
+					'site'         => filter_input( INPUT_POST, 'site', FILTER_SANITIZE_FULL_SPECIAL_CHARS ),
+					'network'      => filter_input( INPUT_POST, 'network', FILTER_SANITIZE_FULL_SPECIAL_CHARS ),
 				),
 				$this->item_defaults
 			);
@@ -670,7 +670,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_delete_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$items = pstoolkit_get_option_filtered( $this->items_name );
@@ -792,7 +792,7 @@ if ( ! class_exists( 'PSToolkit_Dashboard_Widgets' ) ) {
 		 * @since 3.1.0
 		 */
 		public function ajax_get_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$items = pstoolkit_get_option_filtered( $this->items_name );

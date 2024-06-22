@@ -481,7 +481,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Help_Content' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_save_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id', 'title', 'content' ) );
 			$message = __( 'Element wurde aktualisiert.', 'ub' );
@@ -491,7 +491,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Help_Content' ) ) {
 			}
 			$content              = isset( $_POST['content_meta'] ) ? $_POST['content_meta'] : stripslashes( $_POST['content'] );
 			$item                 = array(
-				'title'   => filter_input( INPUT_POST, 'title', FILTER_SANITIZE_STRING ),
+				'title'   => filter_input( INPUT_POST, 'title', FILTER_SANITIZE_FULL_SPECIAL_CHARS ),
 				'content' => wp_kses_post( $content ),
 				'updated' => time(),
 			);
@@ -518,7 +518,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Help_Content' ) ) {
 		 * @since 1.0.0
 		 */
 		public function ajax_delete_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$value = $this->get_value();
@@ -560,7 +560,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Help_Content' ) ) {
 		 * @since 3.1.0
 		 */
 		public function ajax_get_item() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$items = $this->get_value( 'items' );

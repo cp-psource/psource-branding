@@ -323,7 +323,7 @@ Wir wünschen Dir viel Spaß mit Deiner neuen Webseite. Vielen Dank!
 		 * @since 1.0.0
 		 */
 		public function ajax_section_reset() {
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id, 'reset' );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
 			$keys = array(

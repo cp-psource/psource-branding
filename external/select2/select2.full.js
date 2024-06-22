@@ -3142,7 +3142,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
                         if (self.options.get('debug') && window.console && console.error) {
                             // Check to make sure that the response included a `results` key.
-                            if (!results || !results.results || !$.isArray(results.results)) {
+                            if (!results || !results.results || !Array.isArray(results.results)) {
                                 console.error('Select2: The AJAX results did not return an array in the ' + '`results` key of the response.');
                             }
                         }
@@ -3192,7 +3192,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
                 decorated.call(this, $element, options);
 
-                if ($.isArray(tags)) {
+                if (Array.isArray(tags)) {
                     for (var t = 0; t < tags.length; t++) {
                         var tag = tags[t];
 
@@ -4147,7 +4147,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
                     }
                 }
 
-                if ($.isArray(options.language)) {
+                if (Array.isArray(options.language)) {
                     var languages = new Translation();
                     options.language.push('en');
                     var languageNames = options.language;
@@ -4849,7 +4849,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
                 var newVal = args[0];
 
-                if ($.isArray(newVal)) {
+                if (Array.isArray(newVal)) {
                     newVal = $.map(newVal, function(obj) {
                         return obj.toString();
                     });
@@ -4908,7 +4908,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
                 var classes,
                     replacements = [],
                     adapted;
-                classes = $.trim($dest.attr('class'));
+                    classes = $dest.attr('class').trim();
 
                 if (classes) {
                     classes = '' + classes; // for IE which returns object
@@ -4921,7 +4921,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
                     });
                 }
 
-                classes = $.trim($src.attr('class'));
+                classes = $src.attr('class').trim();
 
                 if (classes) {
                     classes = '' + classes; // for IE which returns object
@@ -5006,7 +5006,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
                 var $dropdown = decorated.call(this);
                 var dropdownCssClass = this.options.get('dropdownCssClass') || '';
 
-                if ($.isFunction(dropdownCssClass)) {
+                if (typeof dropdownCssClass === 'function' ) {
                     dropdownCssClass = dropdownCssClass(this.$element);
                 }
 
@@ -5031,7 +5031,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
                 var dropdownCss = this.options.get('dropdownCss') || {};
 
-                if ($.isFunction(dropdownCss)) {
+                if (typeof dropdownCss === 'function') {
                     dropdownCss = dropdownCss(this.$element);
                 }
 
@@ -5065,7 +5065,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
                 this.initSelection.call(null, this.$element, function(data) {
                     self._isInitialized = true;
 
-                    if (!$.isArray(data)) {
+                    if (!Array.isArray(data)) {
                         data = [data];
                     }
 

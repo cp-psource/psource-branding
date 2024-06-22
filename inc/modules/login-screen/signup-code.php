@@ -414,7 +414,7 @@ if ( ! class_exists( 'PSToolkit_Signup_Codes' ) ) {
 			$show = $this->check_user_code();
 			if ( $show ) {
 				$name         = $this->get_name( 'user_code' );
-				$code_entered = filter_input( INPUT_POST, $name, FILTER_SANITIZE_STRING );
+				$code_entered = filter_input( INPUT_POST, $name, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 				/**
 				 * Code Saved
 				 */
@@ -489,7 +489,7 @@ if ( ! class_exists( 'PSToolkit_Signup_Codes' ) ) {
 			if ( $show ) {
 				$name         = $this->get_name( 'blog_code' );
 				$saved_codes  = $this->get_value( 'blog', 'items' );
-				$code_entered = filter_input( INPUT_POST, $name, FILTER_SANITIZE_STRING );
+				$code_entered = filter_input( INPUT_POST, $name, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 
 				foreach ( $saved_codes as $saved_data ) {
 					$saved_code = isset( $saved_data['code'] ) ? $saved_data['code'] : null;
@@ -558,7 +558,7 @@ if ( ! class_exists( 'PSToolkit_Signup_Codes' ) ) {
 						esc_attr( $_POST[ $name ] )
 					);
 				} else {
-					$action = filter_input( INPUT_GET, 'action', FILTER_SANITIZE_STRING );
+					$action = filter_input( INPUT_GET, 'action', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 					if (
 						! class_exists( 'ProSites_View_Front_Registration' )
 						|| 'new_blog' !== $action
@@ -759,7 +759,7 @@ if ( ! class_exists( 'PSToolkit_Signup_Codes' ) ) {
 							$case = 'sensitive';
 						}
 						$items[ $key ] = array(
-							'code' => filter_var( $data['code'], FILTER_SANITIZE_STRING ),
+							'code' => filter_var( $data['code'], FILTER_SANITIZE_FULL_SPECIAL_CHARS ),
 							'role' => $role,
 							'case' => $case,
 						);

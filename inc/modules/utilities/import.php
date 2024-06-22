@@ -50,9 +50,9 @@ if ( ! class_exists( 'PSToolkit_Import' ) ) {
 		 * @return mixed
 		 */
 		private function get_variable( $name ) {
-			$value = filter_input( INPUT_GET, $name, FILTER_SANITIZE_STRING );
+			$value = filter_input( INPUT_GET, $name, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( empty( $value ) ) {
-				$value = filter_input( INPUT_POST, $name, FILTER_SANITIZE_STRING );
+				$value = filter_input( INPUT_POST, $name, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			}
 			return $value;
 		}

@@ -156,7 +156,7 @@ if ( ! class_exists( 'PSToolkit_Admin_Stats' ) ) {
 			if ( ! isset( $stats['modules'][ $id ]['read'] ) ) {
 				$stats['modules'][ $id ]['read'] = 0;
 			}
-			$action = filter_input( INPUT_POST, 'action', FILTER_SANITIZE_STRING );
+			$action = filter_input( INPUT_POST, 'action', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( 'process' !== $action ) {
 				$stats['modules'][ $id ]['read']++;
 				$stats['modules'][ $id ]['last_read'] = time();

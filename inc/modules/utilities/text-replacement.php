@@ -420,7 +420,7 @@ if ( ! class_exists( 'PSToolkit_Text_Replacement' ) ) {
 		public function ajax_save() {
 			$uba          = pstoolkit_get_uba_object();
 			$message      = $nonce_action = $id = 0;
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$nonce_action = $this->get_nonce_action( $id );
 			$message      = sprintf( 'Element wurde aktualisiert.', 'ub' );
 			if ( '0' == $id ) {
@@ -484,7 +484,7 @@ if ( ! class_exists( 'PSToolkit_Text_Replacement' ) ) {
 		 */
 		public function ajax_delete() {
 			$nonce_action = 0;
-			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id           = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( $id ) {
 				$nonce_action = $this->get_nonce_action( $id, 'delete' );
 			}

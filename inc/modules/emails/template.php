@@ -873,7 +873,7 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 			/**
 			 * Theme ID
 			 */
-			$theme_name = filter_input( INPUT_POST, 'theme_id', FILTER_SANITIZE_STRING );
+			$theme_name = filter_input( INPUT_POST, 'theme_id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$theme_data = $this->get_theme_data( $theme_name );
 			$content    = $this->replace_placeholders( $content, $theme_data );
 			if ( empty( $content ) ) {
@@ -936,7 +936,7 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 		public function ajax_send_test_email() {
 			$nonce_action = $this->get_nonce_action( 'send' );
 			$this->check_input_data( $nonce_action, array( 'email' ) );
-			$email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_STRING );
+			$email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			$email = sanitize_email( $email );
 			if ( ! is_email( $email ) ) {
 				$this->json_error( __( 'Senden nicht möglich: falsche E-Mail-Adresse.', 'ub' ) );
@@ -1144,7 +1144,7 @@ if ( ! class_exists( 'PSToolkit_Email_Template' ) ) {
 		public function ajax_set_template() {
 			$nonce_action = $this->get_nonce_action( 'template' );
 			$this->check_input_data( $nonce_action, array( 'id' ) );
-			$id = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_STRING );
+			$id = filter_input( INPUT_POST, 'id', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 			if ( ! isset( $this->allowed_ids[ $id ] ) ) {
 				wp_send_json_error();
 			}

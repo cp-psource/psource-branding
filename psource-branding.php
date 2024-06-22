@@ -4,7 +4,7 @@ Plugin Name: PSOURCE Toolkit
 Plugin URI: https://cp-psource.github.io/psource-branding/
 Description: Eine komplette White-Label- und Branding-Lösung für Multisite. Adminbar, Loginsreens, Wartungsmodus, Favicons, Entfernen von ClassicPress-Links und Branding und vielem mehr.
 Author: PSOURCE
-Version: 2.3.2
+Version: 2.3.3
 Author URI: https://github.com/cp-psource
 Text Domain: ub
 Domain Path: /languages
@@ -17,17 +17,26 @@ it under the terms of the GNU General Public License (Version 2 - GPLv2) as publ
 the Free Software Foundation.
 */
 
-require 'psource/psource-plugin-update/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+/**
+ * @@@@@@@@@@@@@@@@@ PS UPDATER 1.3 @@@@@@@@@@@
+ **/
 
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/cp-psource/psource-branding',
-	__FILE__,
-	'psource-branding'
-);
+ require 'psource/psource-plugin-update/plugin-update-checker.php';
+ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+ 
+ $myUpdateChecker = PucFactory::buildUpdateChecker(
+	 'https://github.com/cp-psource/psource-branding',
+	 __FILE__,
+	 'psource-branding'
+ );
+ 
+ //Set the branch that contains the stable release.
+ $myUpdateChecker->setBranch('master');
 
-//Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('master');
+/**
+ * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
+ **/
+
 
 /**
  * PSOURCE CP Toolkit Version

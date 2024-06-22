@@ -40,7 +40,7 @@ jQuery( window.document ).ready(function($){
                 $suiPickerType = 'rgba';
 
                 // Listen to color change
-                $suiPickerInput.bind( 'change', function() {
+                $suiPickerInput.on( 'change', function() {
 
                     // Change color preview
                     $suiPickerColor.find( 'span' ).css({
@@ -55,7 +55,7 @@ jQuery( window.document ).ready(function($){
             } else {
 
                 // Listen to color change
-                $suiPickerInput.bind( 'change', function() {
+                $suiPickerInput.on( 'change', function() {
 
                     // Change color preview
                     $suiPickerColor.find( 'span' ).css({
@@ -533,7 +533,7 @@ SUI.pstoolkitSaveSettings = function($, form) {
 				});
                 return;
             }
-            form.submit();
+            form.trigger('submit');
         }
 };
 
@@ -804,26 +804,28 @@ jQuery( window.document ).ready(function($){
     if ( 'object' !== typeof window.SUI ) {
         window.SUI = {};
     }
-    SUI.pstoolkitSideTabs = function()  {
-        $('.sui-side-tabs label.sui-tab-item input').on( 'click', function() {
+    SUI.pstoolkitSideTabs = function() {
+        $('.sui-side-tabs label.sui-tab-item input').on('click', function() {
             var $this      = $(this),
-                $label     = $this.parent( 'label' ),
-                $data      = $this.data( 'tab-menu' ),
-                $wrapper   = $this.closest( '.sui-side-tabs' ),
-                $alllabels = $( '.sui-tab-item', $(this).closest( '.sui-tabs-menu' ) ),
-                $allinputs = $alllabels.find( 'input' ),
-                $container = $wrapper.find('.sui-tabs-content').first()
-            ;
-            $alllabels.removeClass( 'active' );
-            $allinputs.removeAttr( 'checked' );
-            $container.find( '> div' ).removeClass( 'active' );
-            $label.addClass( 'active' );
-            $this.prop( 'checked', true );
-            if ( $wrapper.find( '.sui-tabs-content div[data-tab-content="' + $data + '"]' ).length ) {
-                $wrapper.find( '.sui-tabs-content div[data-tab-content="' + $data + '"]' ).addClass( 'active' );
+                $label     = $this.parent('label'),
+                $data      = $this.data('tab-menu'),
+                $wrapper   = $this.closest('.sui-side-tabs'),
+                $alllabels = $('.sui-tab-item', $this.closest('.sui-tabs-menu')),
+                $allinputs = $alllabels.find('input'),
+                $container = $wrapper.find('.sui-tabs-content').first();
+    
+            $alllabels.removeClass('active');
+            $allinputs.prop('checked', false); // Setze alle Inputs auf unchecked mit .prop()
+            $container.find('> div').removeClass('active');
+            $label.addClass('active');
+            $this.prop('checked', true); // Setze das aktuelle Input auf checked mit .prop()
+    
+            var $tabContent = $wrapper.find('.sui-tabs-content div[data-tab-content="' + $data + '"]');
+            if ($tabContent.length > 0) {
+                $tabContent.addClass('active');
             }
         });
-    };
+    };    
     SUI.pstoolkitSideTabs();
 	/**
      * SUI: save

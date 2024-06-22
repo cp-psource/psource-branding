@@ -45,6 +45,10 @@ More than 30 modules included in CP Toolkit!
 
 == Changelog ==
 
+= 2.3.3 =
+
+* Several Deprecated Fixes
+
 = 2.3.2 =
 
 * Fix: Konflikt mit eMail-Templates

@@ -101,13 +101,13 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 			 * default messages
 			 */
 			$this->messages = array(
-				'success'               => __( 'Erfolg! Deine Änderungen wurden erfolgreich gespeichert!', 'ub' ),
-				'fail'                  => __( 'Es ist ein Fehler aufgetreten. Bitte versuche es erneut.', 'ub' ),
-				'reset-section-success' => __( 'Abschnitt wurde auf die Standardeinstellungen zurückgesetzt.', 'ub' ),
-				'wrong'                 => __( 'Etwas ist schief gelaufen!', 'ub' ),
-				'security'              => __( 'Nee! Sicherheitsüberprüfung fehlgeschlagen!', 'ub' ),
-				'missing'               => __( 'Fehlende benötigte Daten!', 'ub' ),
-				'wrong_userlogin'       => __( 'Diese Benutzeranmeldung existiert nicht!', 'ub' ),
+				'success'               => 'Erfolg! Deine Änderungen wurden erfolgreich gespeichert!',
+				'fail'                  => 'Es ist ein Fehler aufgetreten. Bitte versuche es erneut.',
+				'reset-section-success' => 'Abschnitt wurde auf die Standardeinstellungen zurückgesetzt.',
+				'wrong'                 => 'Etwas ist schief gelaufen!',
+				'security'              => 'Nee! Sicherheitsüberprüfung fehlgeschlagen!',
+				'missing'               => 'Fehlende benötigte Daten!',
+				'wrong_userlogin'       => 'Diese Benutzeranmeldung existiert nicht!',
 			);
 			/**
 			 * remove default footer

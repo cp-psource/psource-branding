@@ -37,6 +37,9 @@ if ( ! class_exists( 'PSToolkit_Base' ) ) {
 
 		public function __construct() {
 			parent::__construct();
+			add_action( 'plugins_loaded', array( $this, 'init_hooks' ) );
+		}
+		public function init_hooks() {
 			pstoolkit_set_ub_version();
 			global $ub_version;
 			$this->build = $ub_version;

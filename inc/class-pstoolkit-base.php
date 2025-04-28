@@ -150,7 +150,7 @@ if ( ! class_exists( 'PSToolkit_Base' ) ) {
 			}
 			$err = new WP_Error(
 				'error',
-				__( 'Module does not exists.', 'ub' )
+				( function_exists( 'is_textdomain_loaded' ) && is_textdomain_loaded( 'ub' ) ? __( 'Module does not exists.', 'ub' ) : 'Module does not exists.' )
 			);
 			return $err;
 		}
@@ -174,7 +174,7 @@ if ( ! class_exists( 'PSToolkit_Base' ) ) {
 			}
 			$err = new WP_Error(
 				'error',
-				__( 'Module does not exists.', 'ub' )
+				( function_exists( 'is_textdomain_loaded' ) && is_textdomain_loaded( 'ub' ) ? __( 'Module does not exist.', 'ub' ) : 'Module does not exist.' )
 			);
 			return $err;
 		}

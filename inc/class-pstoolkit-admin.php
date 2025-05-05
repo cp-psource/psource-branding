@@ -273,10 +273,12 @@ if ( ! class_exists( 'PSToolkit_Admin' ) ) {
 		}
 
 		public function setup_translation() {
-			// Load up the localization file if we're using ClassicPress in a different language
-			// Place it in this plugin's "languages" folder and name it "mp-[value in wp-config].mo"
-			$dir = sprintf( '/%s/languages', basename( pstoolkit_dir( '' ) ) );
-			load_plugin_textdomain( 'ub', false, $dir );
+			add_action( 'init', function() {
+				// Load up the localization file if we're using ClassicPress in a different language
+				// Place it in this plugin's "languages" folder and name it "mp-[value in wp-config].mo"
+				$dir = sprintf( '/%s/languages', basename( pstoolkit_dir( '' ) ) );
+				load_plugin_textdomain( 'ub', false, $dir );
+			});
 		}
 
 		/**
